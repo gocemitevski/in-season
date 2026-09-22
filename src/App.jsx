@@ -216,7 +216,7 @@ export default function App({ initialState }) {
           <p>
             Seasonality is approximate and varies by region, altitude, and growing method.
           </p>
-          <p className="mt-1">Built with React &amp; web standards. No accounts.</p>
+          <p className="mt-1">Built with React &amp; web standards.</p>
         </footer>
       </main>
     </div>
