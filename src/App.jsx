@@ -186,9 +186,18 @@ export default function App({ initialState }) {
 
   const isLoading = status === 'loading' || !country
   const categoryLabel = category === 'fruit' ? 'fruits' : 'vegetables'
-  const resultsHeading = isLoading
-    ? 'Detecting your location…'
-    : `${items.length} ${categoryLabel} in season in ${country.name} · ${MONTH_NAMES[month - 1]}`
+  const resultsHeading = isLoading ? (
+    'Detecting your location…'
+  ) : (
+    <>
+      <span className="font-bold">
+        {items.length} {categoryLabel}
+      </span>{' '}
+      <span className="font-medium text-ink/60">in season in</span>{' '}
+      <span className="font-bold">{country.name}</span>{' '}
+      <span className="font-medium text-ink/60">during {MONTH_NAMES[month - 1]}</span>
+    </>
+  )
 
   return (
     <div className="min-h-dvh">
@@ -206,7 +215,7 @@ export default function App({ initialState }) {
         </section>
 
         <section className="mt-12" aria-live="polite" aria-busy={isLoading}>
-          <h2 className="mb-5 px-1 text-base font-semibold tracking-tight text-ink sm:px-2">
+          <h2 className="mb-5 px-1 text-xl font-semibold tracking-tight text-ink sm:px-3 sm:text-xl">
             {resultsHeading}
           </h2>
           {isLoading ? <SkeletonGrid /> : <ProduceGrid items={items} country={country} />}
