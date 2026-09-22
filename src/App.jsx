@@ -206,7 +206,7 @@ export default function App({ initialState }) {
         </section>
 
         <section className="mt-12" aria-live="polite" aria-busy={isLoading}>
-          <h2 className="mb-5 text-base font-semibold tracking-tight text-ink">
+          <h2 className="mb-5 px-1 text-base font-semibold tracking-tight text-ink sm:px-2">
             {resultsHeading}
           </h2>
           {isLoading ? <SkeletonGrid /> : <ProduceGrid items={items} country={country} />}
