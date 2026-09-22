@@ -1,0 +1,20 @@
+# In Season
+
+> Seasonal fruits and vegetables by month and country.
+
+In Season tells you which produce is in season this month in your country.
+It covers 197 countries and 62 fruits and vegetables, with climate zones and
+southern-hemisphere month shifts taken into account.
+
+- Pick a month and switch between fruits and vegetables
+- Choose any country (auto-detected from IP when available)
+- Shareable URLs encode country and month (example: /?c=FR&m=7)
+- No accounts, no analytics
+
+## Sitemap
+
+See the full sitemap at [SITEMAP_URL].
+
+## Notes
+
+Seasonality is approximate and varies by region, altitude, and growing method.
