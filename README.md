@@ -36,6 +36,7 @@ npm run dev
 | `npm run build` | Client build → SSR build → prerender into `dist/` |
 | `npm run lint` | oxlint |
 | `npm run check:data` | Validate countries/produce JSON |
+| `npm run icons` | Regenerate favicon/PWA icons from the 🌿 emoji |
 | `npm run og` | Regenerate the social share image (`public/og.png`) |
 | `npm run preview` | Preview the production build |
 
