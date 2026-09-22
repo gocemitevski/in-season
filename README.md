@@ -68,7 +68,7 @@ The build uses Vite `base: './'`, so the same `dist/` works at a domain root or 
 Production builds inject the GA4 measurement ID via the `VITE_GA_ID` build env. Set it once:
 
 1. Repo → **Settings → Secrets and variables → Actions → Variables**
-2. Add `GA_MEASUREMENT_ID` = `G-XXXXXXXXXX`
+2. Add `GA_MEASUREMENT_ID` = `G-XXXXXXXXXX` (repository-level, or scoped to the `github-pages` environment — both work; the build job runs in that environment)
 
 The deploy workflow passes it to the build as `VITE_GA_ID`. gtag's automatic `page_view` is disabled; the app sends a single pageview after hydration for the initial URL and again on each country/month/category change. Dev servers and builds without `VITE_GA_ID` skip analytics entirely.
 

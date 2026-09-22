@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Needed so vars scoped to the github-pages environment are visible here
+    # (VITE_GA_ID is read from vars.GA_MEASUREMENT_ID in the build step).
+    environment:
+      name: github-pages
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
