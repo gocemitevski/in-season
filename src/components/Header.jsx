@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { clearStoredLocation } from '../hooks/useLocation'
 import { flagFromCode } from '../lib/season'
 
 export default function Header({
@@ -21,6 +22,7 @@ export default function Header({
             <h1 className="truncate text-lg font-semibold tracking-tight text-ink">
               <a
                 href="./"
+                onClick={() => clearStoredLocation()}
                 className="inline-flex items-center gap-2 rounded-xs text-ink outline-offset-2 hover:text-leaf-800 focus-visible:outline-2"
               >
                 <span aria-hidden="true" className="text-xl">

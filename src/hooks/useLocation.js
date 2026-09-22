@@ -33,6 +33,14 @@ function writeStored(location) {
   }
 }
 
+export function clearStoredLocation() {
+  try {
+    localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    /* private mode etc. */
+  }
+}
+
 function readUrlCountry(isKnownCode) {
   try {
     const code = new URLSearchParams(window.location.search).get('c')
