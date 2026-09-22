@@ -78,7 +78,6 @@ export default function App({ initialState }) {
   const [category, setCategory] = useState(
     () => initialState?.category ?? readUrlCategory() ?? 'fruit',
   )
-  const selectRef = useRef(null)
   const lastPageviewRef = useRef(null)
 
   const country = getCountry(location?.code)
@@ -91,9 +90,6 @@ export default function App({ initialState }) {
     (code) => setCountry(code, 'manual'),
     [setCountry],
   )
-  const handleFocusCountrySelect = useCallback(() => {
-    selectRef.current?.focus()
-  }, [])
 
   useEffect(() => {
     // Apply URL month/category only on mount (after hydration); never re-read
@@ -196,12 +192,7 @@ export default function App({ initialState }) {
 
   return (
     <div className="min-h-dvh">
-      <Header
-        countries={COUNTRIES}
-        country={country}
-        onSelectCountry={handleSelectCountry}
-        selectRef={selectRef}
-      />
+      <Header countries={COUNTRIES} country={country} onSelectCountry={handleSelectCountry} />
 
       <main className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6 sm:pt-12">
         <p className="max-w-2xl text-sm leading-relaxed text-ink/75">
@@ -212,18 +203,6 @@ export default function App({ initialState }) {
         <section className="mt-8 space-y-5" aria-label="Filters">
           <MonthChips month={month} onChange={setMonth} />
           <CategoryToggle value={category} onChange={setCategory} />
-
-          {location?.source === 'ip' && country && (
-            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1 pt-2">
-              <button
-                type="button"
-                onClick={handleFocusCountrySelect}
-                className="text-xs font-medium text-leaf-700 underline decoration-leaf-300 underline-offset-2 hover:text-leaf-800"
-              >
-                Located from IP — change
-              </button>
-            </div>
-          )}
         </section>
 
         <section className="mt-12" aria-live="polite" aria-busy={isLoading}>

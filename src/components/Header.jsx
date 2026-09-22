@@ -6,7 +6,6 @@ export default function Header({
   countries,
   country,
   onSelectCountry,
-  selectRef,
 }) {
   // Customizable-select markup (<button>/<selectedcontent> inside <select>) is
   // stripped by classic HTML parsers, so prerendered HTML cannot hydrate it.
@@ -43,7 +42,6 @@ export default function Header({
           </label>
           {selectReady && (
             <select
-              ref={selectRef}
               id="country-select"
               className="country-select max-w-full items-center"
               value={country?.code ?? ''}
