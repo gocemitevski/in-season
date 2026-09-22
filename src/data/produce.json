@@ -1,0 +1,1653 @@
+[
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "type": "fruit",
+    "emoji": "🍓",
+    "color": "#e11d48",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Strawberry"
+  },
+  {
+    "id": "cherry",
+    "name": "Cherry",
+    "type": "fruit",
+    "emoji": "🍒",
+    "color": "#be123c",
+    "zones": [
+      "temperate",
+      "mediterranean"
+    ],
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "monthsSouth": [
+      11,
+      12,
+      1
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Cherry"
+  },
+  {
+    "id": "apricot",
+    "name": "Apricot",
+    "type": "fruit",
+    "color": "#f59e0b",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical"
+    ],
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "monthsSouth": [
+      11,
+      12,
+      1
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Apricot"
+  },
+  {
+    "id": "peach",
+    "name": "Peach",
+    "type": "fruit",
+    "emoji": "🍑",
+    "color": "#fb7185",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "mediterranean"
+    ],
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Peach"
+  },
+  {
+    "id": "plum",
+    "name": "Plum",
+    "type": "fruit",
+    "color": "#7c3aed",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "continental"
+    ],
+    "months": [
+      7,
+      8
+    ],
+    "monthsSouth": [
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Plum_(fruit)"
+  },
+  {
+    "id": "grape",
+    "name": "Grape",
+    "type": "fruit",
+    "emoji": "🍇",
+    "color": "#7e22ce",
+    "zones": [
+      "mediterranean",
+      "subtropical",
+      "temperate",
+      "arid"
+    ],
+    "months": [
+      8,
+      9,
+      10
+    ],
+    "monthsSouth": [
+      2,
+      3,
+      4
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Grape"
+  },
+  {
+    "id": "watermelon",
+    "name": "Watermelon",
+    "type": "fruit",
+    "emoji": "🍉",
+    "color": "#16a34a",
+    "zones": [
+      "subtropical",
+      "tropical",
+      "temperate",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Watermelon"
+  },
+  {
+    "id": "melon",
+    "name": "Melon",
+    "type": "fruit",
+    "emoji": "🍈",
+    "color": "#84cc16",
+    "zones": [
+      "subtropical",
+      "temperate",
+      "tropical",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Melon"
+  },
+  {
+    "id": "blueberry",
+    "name": "Blueberry",
+    "type": "fruit",
+    "emoji": "🫐",
+    "color": "#4338ca",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Blueberry"
+  },
+  {
+    "id": "raspberry",
+    "name": "Raspberry",
+    "type": "fruit",
+    "color": "#be123c",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Raspberry"
+  },
+  {
+    "id": "blackberry",
+    "name": "Blackberry",
+    "type": "fruit",
+    "color": "#4c1d95",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "months": [
+      8,
+      9
+    ],
+    "monthsSouth": [
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Blackberry"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "type": "fruit",
+    "emoji": "🍎",
+    "color": "#dc2626",
+    "zones": [
+      "temperate",
+      "continental",
+      "mediterranean"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Apple"
+  },
+  {
+    "id": "pear",
+    "name": "Pear",
+    "type": "fruit",
+    "emoji": "🍐",
+    "color": "#65a30d",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      1,
+      2,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Pear"
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "type": "fruit",
+    "emoji": "🍊",
+    "color": "#f97316",
+    "zones": [
+      "mediterranean",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "monthsSouth": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Orange_(fruit)"
+  },
+  {
+    "id": "mandarin",
+    "name": "Mandarin",
+    "type": "fruit",
+    "color": "#fb923c",
+    "zones": [
+      "mediterranean",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      12,
+      1,
+      2
+    ],
+    "monthsSouth": [
+      6,
+      7,
+      8
+    ],
+    "emoji": "🍊",
+    "wiki": "https://en.wikipedia.org/wiki/Mandarin_orange"
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "type": "fruit",
+    "emoji": "🍋",
+    "color": "#eab308",
+    "zones": [
+      "mediterranean",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "monthsSouth": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Lemon"
+  },
+  {
+    "id": "grapefruit",
+    "name": "Grapefruit",
+    "type": "fruit",
+    "color": "#f43f5e",
+    "zones": [
+      "subtropical",
+      "tropical",
+      "mediterranean",
+      "arid"
+    ],
+    "months": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "monthsSouth": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Grapefruit"
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "type": "fruit",
+    "emoji": "🍌",
+    "color": "#eab308",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Banana"
+  },
+  {
+    "id": "mango",
+    "name": "Mango",
+    "type": "fruit",
+    "emoji": "🥭",
+    "color": "#f59e0b",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Mango"
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "type": "fruit",
+    "emoji": "🍍",
+    "color": "#facc15",
+    "zones": [
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Pineapple"
+  },
+  {
+    "id": "papaya",
+    "name": "Papaya",
+    "type": "fruit",
+    "color": "#fb923c",
+    "zones": [
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Papaya"
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "type": "fruit",
+    "emoji": "🥥",
+    "color": "#a16207",
+    "zones": [
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Coconut"
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "type": "fruit",
+    "emoji": "🥝",
+    "color": "#65a30d",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "monthsSouth": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Kiwifruit"
+  },
+  {
+    "id": "pomegranate",
+    "name": "Pomegranate",
+    "type": "fruit",
+    "color": "#dc2626",
+    "zones": [
+      "mediterranean",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Pomegranate"
+  },
+  {
+    "id": "fig",
+    "name": "Fig",
+    "type": "fruit",
+    "color": "#a855f7",
+    "zones": [
+      "mediterranean",
+      "subtropical"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Fig"
+  },
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "type": "fruit",
+    "emoji": "🥑",
+    "color": "#4d7c0f",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Avocado"
+  },
+  {
+    "id": "dates",
+    "name": "Dates",
+    "type": "fruit",
+    "color": "#92400e",
+    "zones": [
+      "arid",
+      "subtropical"
+    ],
+    "months": [
+      8,
+      9,
+      10
+    ],
+    "monthsSouth": [
+      2,
+      3,
+      4
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Date_(fruit)"
+  },
+  {
+    "id": "lychee",
+    "name": "Lychee",
+    "type": "fruit",
+    "color": "#ef4444",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "months": [
+      5,
+      6,
+      7
+    ],
+    "monthsSouth": [
+      11,
+      12,
+      1
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Lychee"
+  },
+  {
+    "id": "passion-fruit",
+    "name": "Passion fruit",
+    "type": "fruit",
+    "color": "#7c3aed",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Passion_fruit_(Passiflora_edulis)"
+  },
+  {
+    "id": "cranberry",
+    "name": "Cranberry",
+    "type": "fruit",
+    "color": "#b91c1c",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      1,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Cranberry"
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "type": "vegetable",
+    "emoji": "🍅",
+    "color": "#dc2626",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "tropical",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Tomato"
+  },
+  {
+    "id": "cucumber",
+    "name": "Cucumber",
+    "type": "vegetable",
+    "emoji": "🥒",
+    "color": "#16a34a",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "tropical",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Cucumber"
+  },
+  {
+    "id": "zucchini",
+    "name": "Zucchini",
+    "type": "vegetable",
+    "color": "#65a30d",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Zucchini"
+  },
+  {
+    "id": "carrot",
+    "name": "Carrot",
+    "type": "vegetable",
+    "emoji": "🥕",
+    "color": "#f97316",
+    "zones": [
+      "temperate",
+      "continental",
+      "mediterranean",
+      "subtropical",
+      "arid",
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Carrot"
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "type": "vegetable",
+    "emoji": "🥔",
+    "color": "#a16207",
+    "zones": [
+      "temperate",
+      "continental",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Potato"
+  },
+  {
+    "id": "sweet-potato",
+    "name": "Sweet potato",
+    "type": "vegetable",
+    "color": "#d97706",
+    "zones": [
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "emoji": "🍠",
+    "wiki": "https://en.wikipedia.org/wiki/Sweet_potato"
+  },
+  {
+    "id": "corn",
+    "name": "Corn",
+    "type": "vegetable",
+    "emoji": "🌽",
+    "color": "#eab308",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Maize"
+  },
+  {
+    "id": "bell-pepper",
+    "name": "Bell pepper",
+    "type": "vegetable",
+    "emoji": "🫑",
+    "color": "#16a34a",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "tropical",
+      "arid"
+    ],
+    "months": [
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Bell_pepper"
+  },
+  {
+    "id": "chili-pepper",
+    "name": "Chili pepper",
+    "type": "vegetable",
+    "emoji": "🌶️",
+    "color": "#dc2626",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Chili_pepper"
+  },
+  {
+    "id": "broccoli",
+    "name": "Broccoli",
+    "type": "vegetable",
+    "emoji": "🥦",
+    "color": "#15803d",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "continental"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Broccoli"
+  },
+  {
+    "id": "cauliflower",
+    "name": "Cauliflower",
+    "type": "vegetable",
+    "color": "#94a3b8",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "continental"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Cauliflower"
+  },
+  {
+    "id": "cabbage",
+    "name": "Cabbage",
+    "type": "vegetable",
+    "color": "#15803d",
+    "zones": [
+      "temperate",
+      "continental",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "emoji": "🥬",
+    "wiki": "https://en.wikipedia.org/wiki/Cabbage"
+  },
+  {
+    "id": "lettuce",
+    "name": "Lettuce",
+    "type": "vegetable",
+    "emoji": "🥬",
+    "color": "#65a30d",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Lettuce"
+  },
+  {
+    "id": "spinach",
+    "name": "Spinach",
+    "type": "vegetable",
+    "color": "#166534",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      9,
+      10,
+      11,
+      3,
+      4,
+      5
+    ],
+    "emoji": "🥬",
+    "wiki": "https://en.wikipedia.org/wiki/Spinach"
+  },
+  {
+    "id": "kale",
+    "name": "Kale",
+    "type": "vegetable",
+    "color": "#3f6212",
+    "zones": [
+      "temperate",
+      "continental",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "emoji": "🥬",
+    "wiki": "https://en.wikipedia.org/wiki/Kale"
+  },
+  {
+    "id": "onion",
+    "name": "Onion",
+    "type": "vegetable",
+    "emoji": "🧅",
+    "color": "#d97706",
+    "zones": [
+      "temperate",
+      "continental",
+      "subtropical",
+      "tropical",
+      "mediterranean",
+      "arid"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Onion"
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "type": "vegetable",
+    "emoji": "🧄",
+    "color": "#a855f7",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical"
+    ],
+    "months": [
+      6,
+      7,
+      8
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Garlic"
+  },
+  {
+    "id": "radish",
+    "name": "Radish",
+    "type": "vegetable",
+    "color": "#ef4444",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12,
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Radish"
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "type": "vegetable",
+    "color": "#9f1239",
+    "zones": [
+      "temperate",
+      "continental",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      1,
+      2,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "emoji": "🫜",
+    "wiki": "https://en.wikipedia.org/wiki/Beetroot"
+  },
+  {
+    "id": "asparagus",
+    "name": "Asparagus",
+    "type": "vegetable",
+    "color": "#84cc16",
+    "zones": [
+      "temperate",
+      "mediterranean"
+    ],
+    "months": [
+      4,
+      5,
+      6
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Asparagus"
+  },
+  {
+    "id": "celery",
+    "name": "Celery",
+    "type": "vegetable",
+    "color": "#4d7c0f",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "months": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "monthsSouth": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Celery"
+  },
+  {
+    "id": "eggplant",
+    "name": "Eggplant",
+    "type": "vegetable",
+    "emoji": "🍆",
+    "color": "#6d28d9",
+    "zones": [
+      "subtropical",
+      "tropical",
+      "temperate",
+      "arid"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Eggplant"
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "type": "vegetable",
+    "color": "#ea580c",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "months": [
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Pumpkin_and_squash"
+  },
+  {
+    "id": "green-beans",
+    "name": "Green beans",
+    "type": "vegetable",
+    "color": "#15803d",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "tropical"
+    ],
+    "months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      12,
+      1,
+      2,
+      3
+    ],
+    "emoji": "🫘",
+    "wiki": "https://en.wikipedia.org/wiki/Green_bean"
+  },
+  {
+    "id": "peas",
+    "name": "Peas",
+    "type": "vegetable",
+    "color": "#65a30d",
+    "zones": [
+      "temperate",
+      "continental",
+      "mediterranean"
+    ],
+    "months": [
+      4,
+      5,
+      6
+    ],
+    "monthsSouth": [
+      10,
+      11,
+      12
+    ],
+    "emoji": "🫛",
+    "wiki": "https://en.wikipedia.org/wiki/Pea"
+  },
+  {
+    "id": "mushroom",
+    "name": "Mushroom",
+    "type": "vegetable",
+    "emoji": "🍄",
+    "color": "#a16207",
+    "zones": [
+      "temperate",
+      "continental",
+      "mediterranean",
+      "subtropical",
+      "tropical",
+      "arid"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Mushroom"
+  },
+  {
+    "id": "artichoke",
+    "name": "Artichoke",
+    "type": "vegetable",
+    "color": "#4ade80",
+    "zones": [
+      "mediterranean",
+      "subtropical"
+    ],
+    "months": [
+      3,
+      4,
+      5,
+      9,
+      10,
+      11
+    ],
+    "monthsSouth": [
+      9,
+      10,
+      11,
+      3,
+      4,
+      5
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Artichoke"
+  },
+  {
+    "id": "fennel",
+    "name": "Fennel",
+    "type": "vegetable",
+    "color": "#86efac",
+    "zones": [
+      "mediterranean",
+      "temperate"
+    ],
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Fennel"
+  },
+  {
+    "id": "leek",
+    "name": "Leek",
+    "type": "vegetable",
+    "color": "#a3e635",
+    "zones": [
+      "temperate",
+      "mediterranean",
+      "continental"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Leek"
+  },
+  {
+    "id": "turnip",
+    "name": "Turnip",
+    "type": "vegetable",
+    "color": "#c4b5fd",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      1,
+      2,
+      3,
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "emoji": "🫜",
+    "wiki": "https://en.wikipedia.org/wiki/Turnip"
+  },
+  {
+    "id": "brussels-sprouts",
+    "name": "Brussels sprouts",
+    "type": "vegetable",
+    "color": "#365314",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "months": [
+      9,
+      10,
+      11,
+      12
+    ],
+    "monthsSouth": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Brussels_sprout"
+  },
+  {
+    "id": "okra",
+    "name": "Okra",
+    "type": "vegetable",
+    "color": "#a3e635",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "arid"
+    ],
+    "months": [
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "monthsSouth": [
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "wiki": "https://en.wikipedia.org/wiki/Okra"
+  }
+]

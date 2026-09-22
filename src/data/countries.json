@@ -1,0 +1,1641 @@
+[
+  {
+    "code": "AF",
+    "name": "Afghanistan",
+    "zones": [
+      "arid",
+      "continental"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AL",
+    "name": "Albania",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DZ",
+    "name": "Algeria",
+    "zones": [
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AD",
+    "name": "Andorra",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AO",
+    "name": "Angola",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "AG",
+    "name": "Antigua and Barbuda",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AR",
+    "name": "Argentina",
+    "zones": [
+      "subtropical",
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "AM",
+    "name": "Armenia",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AU",
+    "name": "Australia",
+    "zones": [
+      "subtropical",
+      "temperate",
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "AT",
+    "name": "Austria",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AZ",
+    "name": "Azerbaijan",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BS",
+    "name": "Bahamas",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BH",
+    "name": "Bahrain",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BD",
+    "name": "Bangladesh",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BB",
+    "name": "Barbados",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BY",
+    "name": "Belarus",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BE",
+    "name": "Belgium",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BZ",
+    "name": "Belize",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BJ",
+    "name": "Benin",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BT",
+    "name": "Bhutan",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BO",
+    "name": "Bolivia",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "BA",
+    "name": "Bosnia and Herzegovina",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BW",
+    "name": "Botswana",
+    "zones": [
+      "arid",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "BR",
+    "name": "Brazil",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "BN",
+    "name": "Brunei",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BG",
+    "name": "Bulgaria",
+    "zones": [
+      "mediterranean",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "BI",
+    "name": "Burundi",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "CV",
+    "name": "Cabo Verde",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KH",
+    "name": "Cambodia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CM",
+    "name": "Cameroon",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CA",
+    "name": "Canada",
+    "zones": [
+      "temperate",
+      "continental"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CF",
+    "name": "Central African Republic",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TD",
+    "name": "Chad",
+    "zones": [
+      "tropical",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CL",
+    "name": "Chile",
+    "zones": [
+      "mediterranean",
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "CN",
+    "name": "China",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CO",
+    "name": "Colombia",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "KM",
+    "name": "Comoros",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "CG",
+    "name": "Congo (Republic)",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "CD",
+    "name": "Congo (DR)",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "CR",
+    "name": "Costa Rica",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CI",
+    "name": "Côte d'Ivoire",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "HR",
+    "name": "Croatia",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CU",
+    "name": "Cuba",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CY",
+    "name": "Cyprus",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CZ",
+    "name": "Czechia",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DK",
+    "name": "Denmark",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DJ",
+    "name": "Djibouti",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DM",
+    "name": "Dominica",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DO",
+    "name": "Dominican Republic",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "EC",
+    "name": "Ecuador",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "EG",
+    "name": "Egypt",
+    "zones": [
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SV",
+    "name": "El Salvador",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GQ",
+    "name": "Equatorial Guinea",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ER",
+    "name": "Eritrea",
+    "zones": [
+      "arid",
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "EE",
+    "name": "Estonia",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SZ",
+    "name": "Eswatini",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "ET",
+    "name": "Ethiopia",
+    "zones": [
+      "tropical",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "FJ",
+    "name": "Fiji",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "FI",
+    "name": "Finland",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "FR",
+    "name": "France",
+    "zones": [
+      "temperate",
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GA",
+    "name": "Gabon",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "GM",
+    "name": "Gambia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GE",
+    "name": "Georgia",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "DE",
+    "name": "Germany",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GH",
+    "name": "Ghana",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GR",
+    "name": "Greece",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GD",
+    "name": "Grenada",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GT",
+    "name": "Guatemala",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GN",
+    "name": "Guinea",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GW",
+    "name": "Guinea-Bissau",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GY",
+    "name": "Guyana",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "HT",
+    "name": "Haiti",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "HN",
+    "name": "Honduras",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "HU",
+    "name": "Hungary",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IS",
+    "name": "Iceland",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IN",
+    "name": "India",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ID",
+    "name": "Indonesia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "IR",
+    "name": "Iran",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IQ",
+    "name": "Iraq",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IE",
+    "name": "Ireland",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IL",
+    "name": "Israel",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "IT",
+    "name": "Italy",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "JM",
+    "name": "Jamaica",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "JP",
+    "name": "Japan",
+    "zones": [
+      "temperate",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "JO",
+    "name": "Jordan",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KZ",
+    "name": "Kazakhstan",
+    "zones": [
+      "continental",
+      "arid",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KE",
+    "name": "Kenya",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "KI",
+    "name": "Kiribati",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "KP",
+    "name": "North Korea",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KR",
+    "name": "South Korea",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "XK",
+    "name": "Kosovo",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KW",
+    "name": "Kuwait",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "KG",
+    "name": "Kyrgyzstan",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LA",
+    "name": "Laos",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LV",
+    "name": "Latvia",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LB",
+    "name": "Lebanon",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LS",
+    "name": "Lesotho",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "LR",
+    "name": "Liberia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LY",
+    "name": "Libya",
+    "zones": [
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LI",
+    "name": "Liechtenstein",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LT",
+    "name": "Lithuania",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LU",
+    "name": "Luxembourg",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MG",
+    "name": "Madagascar",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "MW",
+    "name": "Malawi",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "MY",
+    "name": "Malaysia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "MV",
+    "name": "Maldives",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "ML",
+    "name": "Mali",
+    "zones": [
+      "arid",
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MT",
+    "name": "Malta",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MH",
+    "name": "Marshall Islands",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MR",
+    "name": "Mauritania",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MU",
+    "name": "Mauritius",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "MX",
+    "name": "Mexico",
+    "zones": [
+      "tropical",
+      "subtropical",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "FM",
+    "name": "Micronesia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MD",
+    "name": "Moldova",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MC",
+    "name": "Monaco",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MN",
+    "name": "Mongolia",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ME",
+    "name": "Montenegro",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MA",
+    "name": "Morocco",
+    "zones": [
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MZ",
+    "name": "Mozambique",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "MM",
+    "name": "Myanmar",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NA",
+    "name": "Namibia",
+    "zones": [
+      "arid",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "NR",
+    "name": "Nauru",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "NP",
+    "name": "Nepal",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NL",
+    "name": "Netherlands",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "NI",
+    "name": "Nicaragua",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NE",
+    "name": "Niger",
+    "zones": [
+      "arid",
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NG",
+    "name": "Nigeria",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "MK",
+    "name": "North Macedonia",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "NO",
+    "name": "Norway",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "OM",
+    "name": "Oman",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PK",
+    "name": "Pakistan",
+    "zones": [
+      "arid",
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PW",
+    "name": "Palau",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PS",
+    "name": "Palestine",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PA",
+    "name": "Panama",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PG",
+    "name": "Papua New Guinea",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "PY",
+    "name": "Paraguay",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "PE",
+    "name": "Peru",
+    "zones": [
+      "tropical",
+      "arid",
+      "subtropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "PH",
+    "name": "Philippines",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PL",
+    "name": "Poland",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "PT",
+    "name": "Portugal",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "QA",
+    "name": "Qatar",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "RO",
+    "name": "Romania",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "RU",
+    "name": "Russia",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "RW",
+    "name": "Rwanda",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "KN",
+    "name": "Saint Kitts and Nevis",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LC",
+    "name": "Saint Lucia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "VC",
+    "name": "Saint Vincent and the Grenadines",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "WS",
+    "name": "Samoa",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "SM",
+    "name": "San Marino",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ST",
+    "name": "São Tomé and Príncipe",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SA",
+    "name": "Saudi Arabia",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SN",
+    "name": "Senegal",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "RS",
+    "name": "Serbia",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SC",
+    "name": "Seychelles",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "SL",
+    "name": "Sierra Leone",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SG",
+    "name": "Singapore",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "SK",
+    "name": "Slovakia",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SI",
+    "name": "Slovenia",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SB",
+    "name": "Solomon Islands",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "SO",
+    "name": "Somalia",
+    "zones": [
+      "arid",
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ZA",
+    "name": "South Africa",
+    "zones": [
+      "subtropical",
+      "mediterranean",
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "SS",
+    "name": "South Sudan",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ES",
+    "name": "Spain",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "LK",
+    "name": "Sri Lanka",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "SD",
+    "name": "Sudan",
+    "zones": [
+      "arid",
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SR",
+    "name": "Suriname",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SE",
+    "name": "Sweden",
+    "zones": [
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "CH",
+    "name": "Switzerland",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "SY",
+    "name": "Syria",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TW",
+    "name": "Taiwan",
+    "zones": [
+      "subtropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TJ",
+    "name": "Tajikistan",
+    "zones": [
+      "arid",
+      "continental",
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TZ",
+    "name": "Tanzania",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "TH",
+    "name": "Thailand",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TL",
+    "name": "Timor-Leste",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "TG",
+    "name": "Togo",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TO",
+    "name": "Tonga",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "TT",
+    "name": "Trinidad and Tobago",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TN",
+    "name": "Tunisia",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TR",
+    "name": "Turkey",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TM",
+    "name": "Turkmenistan",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "TV",
+    "name": "Tuvalu",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "UG",
+    "name": "Uganda",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "e"
+  },
+  {
+    "code": "UA",
+    "name": "Ukraine",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "AE",
+    "name": "United Arab Emirates",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "GB",
+    "name": "United Kingdom",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "US",
+    "name": "United States",
+    "zones": [
+      "temperate",
+      "subtropical",
+      "mediterranean",
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "UY",
+    "name": "Uruguay",
+    "zones": [
+      "temperate"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "UZ",
+    "name": "Uzbekistan",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "VU",
+    "name": "Vanuatu",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "VA",
+    "name": "Vatican City",
+    "zones": [
+      "mediterranean"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "VE",
+    "name": "Venezuela",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "VN",
+    "name": "Vietnam",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "YE",
+    "name": "Yemen",
+    "zones": [
+      "arid"
+    ],
+    "hem": "n"
+  },
+  {
+    "code": "ZM",
+    "name": "Zambia",
+    "zones": [
+      "tropical"
+    ],
+    "hem": "s"
+  },
+  {
+    "code": "ZW",
+    "name": "Zimbabwe",
+    "zones": [
+      "tropical",
+      "subtropical"
+    ],
+    "hem": "s"
+  }
+]
