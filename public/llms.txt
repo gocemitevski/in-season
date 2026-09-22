@@ -9,7 +9,7 @@ southern-hemisphere month shifts taken into account.
 - Pick a month and switch between fruits and vegetables
 - Choose any country (auto-detected from IP when available)
 - Shareable URLs encode country and month (example: /?c=FR&m=7)
-- No accounts, no analytics
+- No accounts
 
 ## Sitemap
 

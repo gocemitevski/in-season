@@ -2,6 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { initAnalytics } from './lib/analytics'
+
+initAnalytics()
 
 const rootEl = document.getElementById('root')
 const initialState = window.__INITIAL_STATE__ ?? undefined

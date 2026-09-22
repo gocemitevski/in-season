@@ -2,7 +2,7 @@
 
 **Which fruits and vegetables are in season this month in your country.**
 
-In Season is a free web app with no analytics that shows seasonal produce for **197 countries** and **62 fruits & vegetables**, using climate zones and hemisphere-aware month shifts (including southern-hemisphere seasons).
+In Season is a free web app that shows seasonal produce for **197 countries** and **62 fruits & vegetables**, using climate zones and hemisphere-aware month shifts (including southern-hemisphere seasons).
 
 ## Features
 
@@ -52,12 +52,31 @@ Defaults to `http://localhost:4173` if `SITE_URL` is unset.
 
 Pushing to `master` runs `.github/workflows/deploy.yml`, which builds `dist/` and publishes it with the official Pages actions.
 
+The site serves from the custom domain **https://in-season.gocemitevski.com** (`public/CNAME`).
+
 One-time setup:
 
 1. Repo → **Settings → Pages → Source**: **GitHub Actions**
-2. Optional: add a repository variable `SITE_URL` (e.g. `https://you.github.io/my-repo`) to override the derived URL — needed only for custom domains or `owner.github.io` user sites if you prefer an explicit value
+2. Repo → **Settings → Pages → Custom domain**: `in-season.gocemitevski.com`, then enable **Enforce HTTPS**
+3. DNS: `CNAME` record pointing `in-season` → `<owner>.github.io`
+4. Optional: repository variable `SITE_URL` overrides the default `https://in-season.gocemitevski.com`
 
-The build uses Vite `base: './'`, so the same `dist/` works at a domain root or a `/repo/` project subpath. `SITE_URL` still controls canonical / Open Graph / sitemap / `llms.txt` / `404.html` absolute URLs.
+The build uses Vite `base: './'`, so the same `dist/` works at a domain root or a subpath. `SITE_URL` controls canonical / Open Graph / sitemap / `llms.txt` / `404.html` absolute URLs.
+
+### Google Analytics
+
+Production builds inject the GA4 measurement ID via the `VITE_GA_ID` build env. Set it once:
+
+1. Repo → **Settings → Secrets and variables → Actions → Variables**
+2. Add `GA_MEASUREMENT_ID` = `G-XXXXXXXXXX`
+
+The deploy workflow passes it to the build as `VITE_GA_ID`. gtag's automatic `page_view` is disabled; the app sends a single pageview after hydration for the initial URL and again on each country/month/category change. Dev servers and builds without `VITE_GA_ID` skip analytics entirely.
+
+For a local production build with analytics:
+
+```bash
+VITE_GA_ID=G-XXXXXXXXXX SITE_URL=https://in-season.gocemitevski.com npm run build
+```
 
 ## Data
 

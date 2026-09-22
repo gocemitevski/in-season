@@ -28,20 +28,18 @@ jobs:
       - run: npm run check:data
       - name: Set SITE_URL
         env:
-          OWNER: ${{ github.repository_owner }}
-          REPO: ${{ github.event.repository.name }}
           VAR_SITE_URL: ${{ vars.SITE_URL }}
         run: |
           if [ -n "$VAR_SITE_URL" ]; then
             SITE_URL="$VAR_SITE_URL"
-          elif [ "$REPO" = "$OWNER.github.io" ]; then
-            SITE_URL="https://$OWNER.github.io"
           else
-            SITE_URL="https://$OWNER.github.io/$REPO"
+            SITE_URL="https://in-season.gocemitevski.com"
           fi
           echo "SITE_URL=$SITE_URL" >> "$GITHUB_ENV"
           echo "Building for $SITE_URL"
       - run: npm run build
+        env:
+          VITE_GA_ID: ${{ vars.GA_MEASUREMENT_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

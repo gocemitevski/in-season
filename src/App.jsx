@@ -5,6 +5,7 @@ import MonthChips from './components/MonthChips'
 import ProduceGrid from './components/ProduceGrid'
 import { useLocation } from './hooks/useLocation'
 import { detectCountry } from './lib/geo'
+import { sendPageview } from './lib/analytics'
 import {
   COUNTRIES,
   MONTH_NAMES,
@@ -78,6 +79,7 @@ export default function App({ initialState }) {
     () => initialState?.category ?? readUrlCategory() ?? 'fruit',
   )
   const selectRef = useRef(null)
+  const lastPageviewRef = useRef(null)
 
   const country = getCountry(location?.code)
   const items = useMemo(
@@ -129,6 +131,13 @@ export default function App({ initialState }) {
       : DEFAULT_TITLE
     document.title = title
 
+    // Virtual pageview for each shareable URL state (load + filter changes).
+    // Skip while location is still resolving and dedupe consecutive sends.
+    if (status !== 'loading' && country && lastPageviewRef.current !== nextUrl) {
+      lastPageviewRef.current = nextUrl
+      sendPageview(nextUrl)
+    }
+
     setLinkHref('link[rel="canonical"]', pageUrl)
     setMetaContent('meta[property="og:url"]', pageUrl)
     setMetaContent('meta[property="og:title"]', title)
@@ -177,7 +186,7 @@ export default function App({ initialState }) {
         ],
       })
     }
-  }, [country, location, month, category, items])
+  }, [country, location, month, category, items, status])
 
   const isLoading = status === 'loading' || !country
   const categoryLabel = category === 'fruit' ? 'fruits' : 'vegetables'
@@ -228,7 +237,7 @@ export default function App({ initialState }) {
           <p>
             Seasonality is approximate and varies by region, altitude, and growing method.
           </p>
-          <p className="mt-1">Built with React &amp; web standards. No accounts, no analytics.</p>
+          <p className="mt-1">Built with React &amp; web standards. No accounts.</p>
         </footer>
       </main>
     </div>
