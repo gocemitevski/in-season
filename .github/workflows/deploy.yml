@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run check:data
+      - name: Set SITE_URL
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          VAR_SITE_URL: ${{ vars.SITE_URL }}
+        run: |
+          if [ -n "$VAR_SITE_URL" ]; then
+            SITE_URL="$VAR_SITE_URL"
+          elif [ "$REPO" = "$OWNER.github.io" ]; then
+            SITE_URL="https://$OWNER.github.io"
+          else
+            SITE_URL="https://$OWNER.github.io/$REPO"
+          fi
+          echo "SITE_URL=$SITE_URL" >> "$GITHUB_ENV"
+          echo "Building for $SITE_URL"
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
