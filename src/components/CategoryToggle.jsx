@@ -1,6 +1,6 @@
 const OPTIONS = [
-  { id: 'fruit', label: 'Fruits' },
-  { id: 'vegetable', label: 'Vegetables' },
+  { id: 'fruit', label: 'Fruits', icon: '🍏' },
+  { id: 'vegetable', label: 'Vegetables', icon: '🥕' },
 ]
 
 export default function CategoryToggle({ value, onChange }) {
@@ -25,6 +25,7 @@ export default function CategoryToggle({ value, onChange }) {
                 : 'text-ink/70 hover:text-ink',
             ].join(' ')}
           >
+            <span aria-hidden="true">{option.icon}</span>
             {option.label}
           </button>
         )
