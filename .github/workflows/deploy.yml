@@ -29,6 +29,7 @@ jobs:
       - name: Set SITE_URL
         env:
           VAR_SITE_URL: ${{ vars.SITE_URL }}
+          VAR_GA_ID: ${{ vars.GA_MEASUREMENT_ID }}
         run: |
           if [ -n "$VAR_SITE_URL" ]; then
             SITE_URL="$VAR_SITE_URL"
@@ -37,6 +38,11 @@ jobs:
           fi
           echo "SITE_URL=$SITE_URL" >> "$GITHUB_ENV"
           echo "Building for $SITE_URL"
+          if [ -n "$VAR_GA_ID" ]; then
+            echo "GA measurement ID configured"
+          else
+            echo "::warning::GA_MEASUREMENT_ID is not set — analytics disabled in this build"
+          fi
       - run: npm run build
         env:
           VITE_GA_ID: ${{ vars.GA_MEASUREMENT_ID }}
