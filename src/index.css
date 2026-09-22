@@ -1,0 +1,218 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+
+  --color-leaf-50: #f1f8ec;
+  --color-leaf-100: #deedd4;
+  --color-leaf-200: #c3deb3;
+  --color-leaf-300: #9ccc84;
+  --color-leaf-400: #74b25e;
+  --color-leaf-500: #549644;
+  --color-leaf-600: #3f7734;
+  --color-leaf-700: #32602a;
+  --color-leaf-800: #2a4e25;
+  --color-leaf-900: #244220;
+
+  --color-sun-100: #fdf0d0;
+  --color-sun-200: #fbdfa0;
+  --color-sun-400: #f0ae2e;
+  --color-sun-500: #e59e14;
+
+  --color-cream: #f2f5ef;
+  --color-ink: #1c2a1e;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-leaf-600;
+  }
+}
+
+/*
+  Country <select> — MDN customizable select pattern with legacy fallback.
+  @supports gates `appearance: base-select` (Chrome 135+, Baseline pending).
+  Outside that, classic `appearance: none` + box-model styling only.
+*/
+.country-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: auto;
+  margin: 0;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border: 1px solid var(--color-leaf-200);
+  border-radius: 9999px;
+  background-color: #fff;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="%231c2a1e"%3E%3Cpath fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 1rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  color: var(--color-ink);
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    border-color 150ms,
+    background-color 150ms;
+}
+
+.country-select:hover {
+  border-color: var(--color-leaf-300);
+  background-color: var(--color-leaf-50);
+}
+
+.country-select:active {
+  transform: scale(0.98);
+}
+
+/*
+  Classic select (Firefox / no base-select): closed state flattens option
+  text, so a literal space in the markup provides flag↔name separation.
+  Spans get inline-block + margin as a fallback where option children style.
+*/
+.country-select .country-select-flag {
+  display: inline-block;
+  margin-right: 0.35em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.country-select .country-select-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@supports (appearance: base-select) {
+  .country-select {
+    appearance: base-select;
+    -webkit-appearance: base-select;
+    background-image: none;
+    padding-right: 0.75rem;
+  }
+
+  .country-select::picker(select) {
+    box-sizing: border-box;
+    margin-top: 0.25rem;
+    padding: 0.35rem 0;
+    border: 1px solid var(--color-leaf-200);
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow:
+      0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+    font-family: inherit;
+    max-height: min(24rem, 70vh);
+    overflow-y: auto;
+  }
+
+  .country-select::picker-icon {
+    content: '';
+    flex-shrink: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    border-right: 2px solid rgb(28 42 30 / 0.45);
+    border-bottom: 2px solid rgb(28 42 30 / 0.45);
+    transform: rotate(45deg) translateY(-2px);
+  }
+
+  .country-select .country-select-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: inherit;
+  }
+
+  .country-select .country-select-button::after {
+    content: none;
+  }
+
+  .country-select .country-select-selected {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  /* Gap on the flex parent spaces flag↔name; no extra margin (avoids double gap). */
+  .country-select .country-select-flag {
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 0;
+    font-style: normal;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .country-select .country-select-name {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+
+  .country-select option {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.45rem 1rem;
+    background: #fff;
+    color: var(--color-ink);
+    font-size: 0.875rem;
+    line-height: 1.35;
+    cursor: pointer;
+  }
+
+  .country-select option .country-select-flag {
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+
+  .country-select option:hover {
+    background-color: var(--color-leaf-50);
+  }
+
+  .country-select option:checked {
+    background-color: var(--color-leaf-50);
+    color: var(--color-leaf-800);
+    font-weight: 600;
+  }
+
+  .country-select option::checkmark {
+    content: '✓';
+    margin-left: auto;
+    color: var(--color-leaf-600);
+    font-weight: 700;
+  }
+}
