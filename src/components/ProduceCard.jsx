@@ -16,22 +16,22 @@ export default function ProduceCard({ item, country }) {
   return (
     <article className="relative flex h-full flex-col gap-4 rounded-2xl border border-leaf-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
       <div
-        className="flex size-14 shrink-0 items-center justify-center self-start rounded-xl"
+        className="flex size-28 shrink-0 items-center justify-center self-start rounded-xl"
         style={{ backgroundColor: tint }}
         aria-hidden="true"
       >
         {src ? (
-          <img src={src} alt="" className="h-10 w-10 object-contain" />
+          <img src={src} alt="" className="h-20 w-20 object-contain" />
         ) : item.emoji ? (
-          <span className="text-3xl leading-none">{item.emoji}</span>
+          <span className="text-6xl leading-none">{item.emoji}</span>
         ) : (
-          <span className="text-xl font-bold" style={{ color: item.color }}>
+          <span className="text-2xl font-bold" style={{ color: item.color }}>
             {item.name.charAt(0)}
           </span>
         )}
       </div>
       <div className="min-w-0">
-        <h3 className="truncate text-sm font-semibold text-ink">
+        <h3 className="truncate text-md font-semibold text-ink">
           <a
             href={item.wiki}
             target="_blank"
