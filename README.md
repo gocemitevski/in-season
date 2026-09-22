@@ -52,7 +52,7 @@ Defaults to `http://localhost:4173` if `SITE_URL` is unset.
 
 Pushing to `master` runs `.github/workflows/deploy.yml`, which builds `dist/` and publishes it with the official Pages actions.
 
-The site serves from the custom domain **https://in-season.gocemitevski.com** (`public/CNAME`).
+The site serves from the custom domain **https://in-season.gocemitevski.com**. With Pages publishing via GitHub Actions, the domain is configured only in **Settings → Pages → Custom domain** — no `CNAME` file in the repo (GitHub ignores it in this mode).
 
 One-time setup:
 
