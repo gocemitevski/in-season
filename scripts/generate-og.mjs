@@ -26,6 +26,11 @@ const PICKS = [
 ]
 
 const produce = JSON.parse(readFileSync(join(root, 'src/data/produce.json'), 'utf8'))
+
+// Same self-hosted Quicksand the site uses; setContent has no origin, so inline it.
+const quicksand = readFileSync(
+  join(root, 'src/assets/fonts/Quicksand-latin.woff2'),
+).toString('base64')
 const colorOf = new Map(produce.map((item) => [item.id, item.color]))
 // Per-icon contrast overrides (produce.json hues wash out on pale tints).
 const COLOR_FIX = new Map([
@@ -59,12 +64,17 @@ const html = `<!doctype html>
 <head>
 <meta charset="utf-8" />
 <style>
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url(data:font/woff2;base64,${quicksand}) format('woff2');
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: ${WIDTH}px; height: ${HEIGHT}px; overflow: hidden; }
   body {
     position: relative;
-    font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
-      'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
     background:
       radial-gradient(560px 420px at 88% 12%, #deedd4 0%, transparent 62%),
       radial-gradient(520px 400px at 12% 96%, #f1f8ec 0%, transparent 60%),
@@ -96,7 +106,7 @@ const html = `<!doctype html>
     margin-top: 40px;
     font-size: 76px;
     line-height: 1.02;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.03em;
     color: #1c2a1e;
   }

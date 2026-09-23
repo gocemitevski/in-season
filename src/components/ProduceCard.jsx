@@ -31,7 +31,7 @@ export default function ProduceCard({ item, country }) {
         )}
       </div>
       <div className="min-w-0">
-        <h3 className="truncate text-md font-semibold text-ink">
+        <h3 className="truncate text-md font-bold text-ink">
           <a
             href={item.wiki}
             target="_blank"
