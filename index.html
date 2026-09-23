@@ -2,6 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Shared URLs (?c/?m/?t) replace the build-time snapshot only after
+      // hydration; hide it until then so the wrong country/month/category
+      // never flashes. The safety timeout never leaves the app hidden if
+      // the bundle fails to load. No-JS visitors skip this entirely.
+      (function () {
+        var p = new URLSearchParams(location.search)
+        if (p.has('c') || p.has('m') || p.has('t')) {
+          document.documentElement.classList.add('ssr-dim')
+          setTimeout(function () {
+            document.documentElement.classList.remove('ssr-dim')
+          }, 3000)
+        }
+      })()
+    </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />

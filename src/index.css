@@ -91,6 +91,12 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* Build-time snapshot hidden for shared-URL visitors — set by the inline
+     script in index.html, removed by App once ?c/?m/?t have been applied. */
+  html.ssr-dim #root {
+    visibility: hidden;
+  }
+
   body {
     @apply bg-cream text-ink font-sans antialiased;
   }

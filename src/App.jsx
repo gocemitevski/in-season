@@ -81,6 +81,13 @@ export default function App({ initialState }) {
   )
   const lastPageviewRef = useRef(null)
 
+  // Snapshot of the build-time state at first render. Shared-URL visitors
+  // start with #root hidden (html.ssr-dim, see index.html) and must stay
+  // hidden until the effects below have committed their ?c/?m/?t values.
+  const firstLocationRef = useRef(location)
+  const firstMonthRef = useRef(month)
+  const firstCategoryRef = useRef(category)
+
   const country = getCountry(location?.code)
   const items = useMemo(
     () => (country ? getProduce(country.code, month, category) : []),
@@ -187,6 +194,19 @@ export default function App({ initialState }) {
       })
     }
   }, [country, location, month, category, items, status])
+
+  // Unhide only after URL-driven state differs from the prerendered snapshot
+  // and has committed — the build-time content must never become visible for
+  // visitors who arrived with ?c/?m/?t.
+  useEffect(() => {
+    if (
+      location !== firstLocationRef.current ||
+      month !== firstMonthRef.current ||
+      category !== firstCategoryRef.current
+    ) {
+      document.documentElement.classList.remove('ssr-dim')
+    }
+  }, [location, month, category])
 
   const isLoading = status === 'loading' || !country
   const categoryLabel = category === 'fruit' ? 'fruits' : 'vegetables'

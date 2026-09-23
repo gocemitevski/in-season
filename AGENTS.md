@@ -11,6 +11,7 @@
 
 - `npm run build` is three stages: (1) Vite client build → `dist/`, (2) Vite SSR build of `src/entry-server.jsx` → `dist-ssr/`, (3) `scripts/prerender.mjs` injects SSR HTML + `window.__INITIAL_STATE__` into `dist/index.html` and rewrites absolute URLs (canonical/OG/sitemap/`llms.txt`/`404.html`) from `SITE_URL` (default `http://localhost:4173`). Never hand-edit `dist/` or `dist-ssr/`.
 - `src/main.jsx` hydrates only when prerender state is present, otherwise `createRoot` — don't break this branch.
+- Shared-URL flash guard: prerender bakes a default location/month/category into the HTML; an inline script in `index.html` adds `html.ssr-dim` (hides `#root`) when the visitor URL carries `?c`/`?m`/`?t`, and `App.jsx` removes it only after that URL state has committed. Keep all three pieces in sync — otherwise shared links flash the build-time country.
 - Vite `base: './'` (relative asset URLs) is required so one build works at domain root or a GH Pages subpath.
 - No router: URL state (`?c=FR&m=7&t=vegetable`) is synced manually in `src/App.jsx`. Any new URL param must be kept in sync both directions.
 
