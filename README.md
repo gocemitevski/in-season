@@ -12,6 +12,7 @@ In Season is a free web app that shows seasonal produce for **197 countries** an
 - Season windows per climate zone; southern hemisphere months shifted +6 when needed
 - Custom monoline produce icons; links out to Wikipedia for each item
 - Prerendered HTML + JSON-LD for search and social previews
+- Installable PWA (web manifest, emoji-based icons, maskable variant)
 - Works without JavaScript (noscript fallback)
 
 ## Stack
@@ -20,6 +21,7 @@ In Season is a free web app that shows seasonal produce for **197 countries** an
 - [Tailwind CSS v4](https://tailwindcss.com)
 - oxlint
 - Static JSON data (`src/data/countries.json`, `src/data/produce.json`)
+- [playwright-core](https://playwright.dev) (headless Chrome for `icons` / `og` generation)
 
 ## Development
 
@@ -36,6 +38,7 @@ npm run dev
 | `npm run build` | Client build → SSR build → prerender into `dist/` |
 | `npm run lint` | oxlint |
 | `npm run check:data` | Validate countries/produce JSON |
+| `npm run fetch:icons` | Fetch a third-party icon for a new produce id (Iconify; all current icons are hand-authored) |
 | `npm run icons` | Regenerate favicon/PWA icons from the 🌿 emoji |
 | `npm run og` | Regenerate the social share image (`public/og.png`) |
 | `npm run preview` | Preview the production build |
@@ -89,4 +92,4 @@ Seasonality is approximate and varies by region, altitude, and growing method.
 
 ## License
 
-Licensed under the [GNU General Public License v3.0](LICENSE) (GPL-3.0).
+Licensed under the [GNU General Public License v3.0](LICENSE) (`GPL-3.0-only`).
