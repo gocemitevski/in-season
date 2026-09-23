@@ -41,7 +41,7 @@ export default function ProduceCard({ item, country }) {
             {item.name}
           </a>
         </h3>
-        <p className="mt-1 text-xs leading-relaxed text-ink/65">
+        <p className="mt-1 text-xs leading-relaxed text-ink/85">
           {seasonSummary(country, item)}
         </p>
       </div>

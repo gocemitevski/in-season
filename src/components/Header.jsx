@@ -32,7 +32,7 @@ export default function Header({
               </a>
             </h1>
           </div>
-          <p className="mt-0.5 truncate text-xs text-ink/70">
+          <p className="mt-0.5 truncate text-xs text-ink/80">
             What&rsquo;s in season near you?
           </p>
         </div>
