@@ -288,3 +288,44 @@
     font-weight: 700;
   }
 }
+
+/* Country search dialog — native <dialog> (modal: focus trap, Esc, top layer).
+   The dialog fills the viewport so backdrop-area clicks target the dialog
+   element itself; only the centered panel is visible. */
+.country-search-dialog {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  color: var(--color-ink);
+  overflow: hidden;
+}
+
+.country-search-dialog[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.country-search-dialog::backdrop {
+  background: rgb(28 42 30 / 0.45);
+}
+
+.country-search-panel {
+  display: flex;
+  flex-direction: column;
+  width: min(26rem, 100%);
+  max-height: min(28rem, 100%);
+  border: 1px solid var(--color-leaf-200);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  overflow: hidden;
+}

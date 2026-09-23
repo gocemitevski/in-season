@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import CountrySearch from './CountrySearch'
 import { clearStoredLocation } from '../hooks/useLocation'
 import { flagFromCode } from '../lib/season'
 
@@ -34,7 +35,7 @@ export default function Header({
           </div>
         </div>
 
-        <div className="shrink-0">
+        <div className="flex shrink-0 items-center gap-2">
           <label htmlFor="country-select" className="sr-only">
             Country
           </label>
@@ -78,6 +79,11 @@ export default function Header({
               ))}
             </select>
           )}
+          <CountrySearch
+            countries={countries}
+            country={country}
+            onSelect={onSelectCountry}
+          />
         </div>
       </div>
     </header>
