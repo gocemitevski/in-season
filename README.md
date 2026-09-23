@@ -89,4 +89,4 @@ Seasonality is approximate and varies by region, altitude, and growing method.
 
 ## License
 
-Add a license before publishing.
+Licensed under the [GNU General Public License v3.0](LICENSE) (GPL-3.0).
