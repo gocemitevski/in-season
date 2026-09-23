@@ -20,15 +20,7 @@ export default function ProduceCard({ item, country }) {
         style={{ backgroundColor: tint }}
         aria-hidden="true"
       >
-        {src ? (
-          <img src={src} alt="" className="h-20 w-20 object-contain" />
-        ) : item.emoji ? (
-          <span className="text-6xl leading-none">{item.emoji}</span>
-        ) : (
-          <span className="text-2xl font-bold" style={{ color: item.color }}>
-            {item.name.charAt(0)}
-          </span>
-        )}
+        {src && <img src={src} alt="" className="h-20 w-20 object-contain" />}
       </div>
       <div className="min-w-0">
         <h3 className="truncate text-md font-bold text-ink">

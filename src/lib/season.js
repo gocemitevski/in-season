@@ -19,7 +19,6 @@ export const MONTH_NAMES = [
 export const MONTH_NAMES_SHORT = MONTH_NAMES.map((name) => name.slice(0, 3))
 
 export const COUNTRIES = [...countriesData].sort((a, b) => a.name.localeCompare(b.name))
-export const PRODUCE = produceData
 
 const countriesByCode = new Map(countriesData.map((c) => [c.code, c]))
 
@@ -42,7 +41,7 @@ function shiftMonths(months, by) {
   return months.map((m) => ((m - 1 + by) % 12) + 1)
 }
 
-export function monthsFor(country, item) {
+function monthsFor(country, item) {
   if (country.hem === 's') {
     return item.monthsSouth ?? shiftMonths(item.months, 6)
   }

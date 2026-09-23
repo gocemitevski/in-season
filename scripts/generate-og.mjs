@@ -51,7 +51,7 @@ const tiles = PICKS.map((id, index) => {
   const row = Math.floor(index / 3)
   const rotation = [-7, 5, -4, 6, -5, 8, -6, 4, -8, 5, -3, 7][index] ?? 0
   return `
-    <div class="tile" style="--tint:${color}1f; left:${col * 162}px; top:${row * 140}px; transform:rotate(${rotation}deg)">
+    <div class="tile" style="left:${col * 162}px; top:${row * 140}px; transform:rotate(${rotation}deg)">
       <div class="tile-inner" style="box-shadow:0 10px 24px -8px ${color}55">
         <span class="tile-bg" style="background:${color}1a"></span>
         <span class="tile-icon" style="fill:${color}">${iconSvg(id)}</span>

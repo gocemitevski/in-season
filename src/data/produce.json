@@ -3,7 +3,6 @@
     "id": "strawberry",
     "name": "Strawberry",
     "type": "fruit",
-    "emoji": "🍓",
     "color": "#e11d48",
     "zones": [
       "temperate",
@@ -30,7 +29,6 @@
     "id": "cherry",
     "name": "Cherry",
     "type": "fruit",
-    "emoji": "🍒",
     "color": "#be123c",
     "zones": [
       "temperate",
@@ -74,7 +72,6 @@
     "id": "peach",
     "name": "Peach",
     "type": "fruit",
-    "emoji": "🍑",
     "color": "#fb7185",
     "zones": [
       "temperate",
@@ -117,7 +114,6 @@
     "id": "grape",
     "name": "Grape",
     "type": "fruit",
-    "emoji": "🍇",
     "color": "#7e22ce",
     "zones": [
       "mediterranean",
@@ -141,7 +137,6 @@
     "id": "watermelon",
     "name": "Watermelon",
     "type": "fruit",
-    "emoji": "🍉",
     "color": "#16a34a",
     "zones": [
       "subtropical",
@@ -165,7 +160,6 @@
     "id": "melon",
     "name": "Melon",
     "type": "fruit",
-    "emoji": "🍈",
     "color": "#84cc16",
     "zones": [
       "subtropical",
@@ -191,7 +185,6 @@
     "id": "blueberry",
     "name": "Blueberry",
     "type": "fruit",
-    "emoji": "🫐",
     "color": "#4338ca",
     "zones": [
       "temperate",
@@ -253,7 +246,6 @@
     "id": "apple",
     "name": "Apple",
     "type": "fruit",
-    "emoji": "🍎",
     "color": "#dc2626",
     "zones": [
       "temperate",
@@ -291,7 +283,6 @@
     "id": "pear",
     "name": "Pear",
     "type": "fruit",
-    "emoji": "🍐",
     "color": "#65a30d",
     "zones": [
       "temperate",
@@ -324,7 +315,6 @@
     "id": "orange",
     "name": "Orange",
     "type": "fruit",
-    "emoji": "🍊",
     "color": "#f97316",
     "zones": [
       "mediterranean",
@@ -369,14 +359,12 @@
       7,
       8
     ],
-    "emoji": "🍊",
     "wiki": "https://en.wikipedia.org/wiki/Mandarin_orange"
   },
   {
     "id": "lemon",
     "name": "Lemon",
     "type": "fruit",
-    "emoji": "🍋",
     "color": "#eab308",
     "zones": [
       "mediterranean",
@@ -432,7 +420,6 @@
     "id": "banana",
     "name": "Banana",
     "type": "fruit",
-    "emoji": "🍌",
     "color": "#eab308",
     "zones": [
       "tropical",
@@ -459,7 +446,6 @@
     "id": "mango",
     "name": "Mango",
     "type": "fruit",
-    "emoji": "🥭",
     "color": "#f59e0b",
     "zones": [
       "tropical",
@@ -486,7 +472,6 @@
     "id": "pineapple",
     "name": "Pineapple",
     "type": "fruit",
-    "emoji": "🍍",
     "color": "#facc15",
     "zones": [
       "tropical"
@@ -535,7 +520,6 @@
     "id": "coconut",
     "name": "Coconut",
     "type": "fruit",
-    "emoji": "🥥",
     "color": "#a16207",
     "zones": [
       "tropical"
@@ -560,7 +544,6 @@
     "id": "kiwi",
     "name": "Kiwi",
     "type": "fruit",
-    "emoji": "🥝",
     "color": "#65a30d",
     "zones": [
       "temperate",
@@ -635,7 +618,6 @@
     "id": "avocado",
     "name": "Avocado",
     "type": "fruit",
-    "emoji": "🥑",
     "color": "#4d7c0f",
     "zones": [
       "tropical",
@@ -751,7 +733,6 @@
     "id": "tomato",
     "name": "Tomato",
     "type": "vegetable",
-    "emoji": "🍅",
     "color": "#dc2626",
     "zones": [
       "temperate",
@@ -777,7 +758,6 @@
     "id": "cucumber",
     "name": "Cucumber",
     "type": "vegetable",
-    "emoji": "🥒",
     "color": "#16a34a",
     "zones": [
       "temperate",
@@ -826,7 +806,6 @@
     "id": "carrot",
     "name": "Carrot",
     "type": "vegetable",
-    "emoji": "🥕",
     "color": "#f97316",
     "zones": [
       "temperate",
@@ -864,7 +843,6 @@
     "id": "potato",
     "name": "Potato",
     "type": "vegetable",
-    "emoji": "🥔",
     "color": "#a16207",
     "zones": [
       "temperate",
@@ -918,14 +896,12 @@
       5,
       6
     ],
-    "emoji": "🍠",
     "wiki": "https://en.wikipedia.org/wiki/Sweet_potato"
   },
   {
     "id": "corn",
     "name": "Corn",
     "type": "vegetable",
-    "emoji": "🌽",
     "color": "#eab308",
     "zones": [
       "temperate",
@@ -948,7 +924,6 @@
     "id": "bell-pepper",
     "name": "Bell pepper",
     "type": "vegetable",
-    "emoji": "🫑",
     "color": "#16a34a",
     "zones": [
       "temperate",
@@ -972,7 +947,6 @@
     "id": "chili-pepper",
     "name": "Chili pepper",
     "type": "vegetable",
-    "emoji": "🌶️",
     "color": "#dc2626",
     "zones": [
       "tropical",
@@ -999,7 +973,6 @@
     "id": "broccoli",
     "name": "Broccoli",
     "type": "vegetable",
-    "emoji": "🥦",
     "color": "#15803d",
     "zones": [
       "temperate",
@@ -1086,14 +1059,12 @@
       10,
       11
     ],
-    "emoji": "🥬",
     "wiki": "https://en.wikipedia.org/wiki/Cabbage"
   },
   {
     "id": "lettuce",
     "name": "Lettuce",
     "type": "vegetable",
-    "emoji": "🥬",
     "color": "#65a30d",
     "zones": [
       "temperate",
@@ -1146,7 +1117,6 @@
       4,
       5
     ],
-    "emoji": "🥬",
     "wiki": "https://en.wikipedia.org/wiki/Spinach"
   },
   {
@@ -1182,14 +1152,12 @@
       11,
       12
     ],
-    "emoji": "🥬",
     "wiki": "https://en.wikipedia.org/wiki/Kale"
   },
   {
     "id": "onion",
     "name": "Onion",
     "type": "vegetable",
-    "emoji": "🧅",
     "color": "#d97706",
     "zones": [
       "temperate",
@@ -1233,7 +1201,6 @@
     "id": "garlic",
     "name": "Garlic",
     "type": "vegetable",
-    "emoji": "🧄",
     "color": "#a855f7",
     "zones": [
       "temperate",
@@ -1313,7 +1280,6 @@
       11,
       12
     ],
-    "emoji": "🫜",
     "wiki": "https://en.wikipedia.org/wiki/Beetroot"
   },
   {
@@ -1364,7 +1330,6 @@
     "id": "eggplant",
     "name": "Eggplant",
     "type": "vegetable",
-    "emoji": "🍆",
     "color": "#6d28d9",
     "zones": [
       "subtropical",
@@ -1429,7 +1394,6 @@
       2,
       3
     ],
-    "emoji": "🫘",
     "wiki": "https://en.wikipedia.org/wiki/Green_bean"
   },
   {
@@ -1452,14 +1416,12 @@
       11,
       12
     ],
-    "emoji": "🫛",
     "wiki": "https://en.wikipedia.org/wiki/Pea"
   },
   {
     "id": "mushroom",
     "name": "Mushroom",
     "type": "vegetable",
-    "emoji": "🍄",
     "color": "#a16207",
     "zones": [
       "temperate",
@@ -1598,7 +1560,6 @@
       11,
       12
     ],
-    "emoji": "🫜",
     "wiki": "https://en.wikipedia.org/wiki/Turnip"
   },
   {

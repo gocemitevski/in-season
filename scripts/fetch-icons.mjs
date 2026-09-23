@@ -22,7 +22,7 @@ const outDir = path.join(root, 'src', 'assets', 'icons')
  * produce id -> 'CUSTOM' (hand-authored) or 'prefix:name' (Iconify ref).
  * All current entries are CUSTOM.
  */
-export const ICON_MAP = {
+const ICON_MAP = {
   strawberry: 'CUSTOM',
   cherry: 'CUSTOM',
   apricot: 'CUSTOM',

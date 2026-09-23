@@ -86,7 +86,7 @@ VITE_GA_ID=G-XXXXXXXXXX SITE_URL=https://in-season.gocemitevski.com npm run buil
 ## Data
 
 - **Countries** — ISO codes, climate zones (`temperate`, `continental`, `mediterranean`, `subtropical`, `tropical`, `arid`), hemisphere
-- **Produce** — type, color, emoji fallback, season months (and optional `monthsSouth`), climate zones, Wikipedia URL
+- **Produce** — type, color, season months (and optional `monthsSouth`), climate zones, Wikipedia URL
 
 Seasonality is approximate and varies by region, altitude, and growing method.
 
