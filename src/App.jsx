@@ -91,6 +91,8 @@ export default function App({ initialState }) {
     [setCountry],
   )
 
+  // oxlint-disable react/set-state-in-effect -- URL state must apply only after
+  // hydration; reading it during render would mismatch the prerendered HTML.
   useEffect(() => {
     // Apply URL month/category only on mount (after hydration); never re-read
     // on later changes or we race the write effect and revert clicks.
@@ -104,6 +106,7 @@ export default function App({ initialState }) {
     const fromUrlCategory = readUrlCategory()
     if (fromUrlCategory) setCategory(fromUrlCategory)
   }, [])
+  // oxlint-enable react/set-state-in-effect
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)

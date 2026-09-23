@@ -71,6 +71,8 @@ export function useLocation({ detect, isKnownCode, initial }) {
   })
   const userSelectedRef = useRef(false)
 
+  // oxlint-disable react/set-state-in-effect -- apply URL/stored country only
+  // after hydration so it cannot mismatch the prerendered HTML.
   useEffect(() => {
     const fromUrl = readUrlCountry(isKnownCode)
     if (fromUrl) {
@@ -110,6 +112,7 @@ export function useLocation({ detect, isKnownCode, initial }) {
       controller.abort()
     }
   }, [detect, isKnownCode])
+  // oxlint-enable react/set-state-in-effect
 
   const setCountry = useCallback(
     (code, source = 'manual') => {

@@ -11,6 +11,7 @@ export default function Header({
   // stripped by classic HTML parsers, so prerendered HTML cannot hydrate it.
   // Render the select client-side only; first client render matches SSR (absent).
   const [selectReady, setSelectReady] = useState(false)
+  // oxlint-disable-next-line react/set-state-in-effect -- flip to client-only after hydration
   useEffect(() => setSelectReady(true), [])
 
   return (

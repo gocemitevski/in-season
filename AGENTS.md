@@ -22,7 +22,8 @@
 
 ## Lint
 
-- oxlint only — no ESLint/Prettier config exists. Expected baseline: 3 warnings `react(set-state-in-effect)` in `Header.jsx`, `useLocation.js`, `App.jsx`. They are intentional (syncing with external systems); do not "fix" by restructuring or suppress them.
+- oxlint only — no ESLint/Prettier config exists. Expected baseline: **0 warnings**.
+- The three post-hydration effects (`App.jsx` URL month/category, `Header.jsx` `selectReady`, `useLocation.js` URL/stored country) legitimately call setState and carry scoped `oxlint-disable react/set-state-in-effect` comments with reasons. Hydration requires "apply external state after first render" — do not remove the disables, and do not "fix" these by reading the URL/storage during render (that mismatches the prerendered HTML).
 
 ## Deploy / env
 
