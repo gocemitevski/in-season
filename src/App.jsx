@@ -3,6 +3,7 @@ import CategoryToggle from './components/CategoryToggle'
 import Header from './components/Header'
 import MonthChips from './components/MonthChips'
 import ProduceGrid from './components/ProduceGrid'
+import ShareLinks from './components/ShareLinks'
 import { useLocation } from './hooks/useLocation'
 import { detectCountry } from './lib/geo'
 import { sendPageview } from './lib/analytics'
@@ -227,7 +228,11 @@ export default function App({ initialState }) {
           {isLoading ? <SkeletonGrid /> : <ProduceGrid items={items} country={country} />}
         </section>
 
-        <footer className="mt-20 border-t border-leaf-200 pt-8 text-center text-xs leading-relaxed text-ink/60">
+        <div className="mt-16">
+          <ShareLinks />
+        </div>
+
+        <footer className="mt-8 border-t border-leaf-200 pt-8 text-center text-xs leading-relaxed text-ink/60">
           <p>
             Seasonality is approximate and varies by region, altitude, and growing method.
           </p>
