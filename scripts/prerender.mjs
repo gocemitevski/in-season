@@ -10,7 +10,7 @@ const LOCAL_ORIGIN = 'http://localhost:4173'
 const siteUrl = (process.env.SITE_URL || LOCAL_ORIGIN).replace(/\/$/, '')
 const buildMonth = new Date().getMonth() + 1
 const initialState = {
-  location: { code: 'US', source: 'default' },
+  location: { code: '', source: 'default' },
   month: buildMonth,
   category: 'fruit',
 }

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 const STORAGE_KEY = 'inseason:location'
-const FALLBACK_CODE = 'US'
+const FALLBACK_CODE = ''
 
 function readStored(isKnownCode) {
   try {
