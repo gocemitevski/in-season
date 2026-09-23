@@ -19,9 +19,9 @@ export default function CategoryToggle({ value, onChange }) {
             aria-pressed={selected}
             onClick={() => onChange(option.id)}
             className={[
-              'flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold uppercase tracking-wide transition active:scale-[0.98]',
+              'flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold uppercase tracking-wide transition duration-200 active:scale-[0.98]',
               selected
-                ? 'bg-white text-ink shadow-sm'
+                ? 'animate-chip-pop bg-white text-ink shadow-sm'
                 : 'text-ink/70 hover:text-ink',
             ].join(' ')}
           >

@@ -3,7 +3,7 @@ import ProduceCard from './ProduceCard'
 export default function ProduceGrid({ items, country }) {
   if (items.length === 0) {
     return (
-      <div className="rounded-3xl border border-dashed border-leaf-200 bg-white/60 px-6 py-16 text-center">
+      <div className="animate-fade-in rounded-3xl border border-dashed border-leaf-200 bg-white/60 px-6 py-16 text-center">
         <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-2xl bg-leaf-100 text-2xl">
           🧺
         </div>
@@ -17,8 +17,12 @@ export default function ProduceGrid({ items, country }) {
 
   return (
     <ul className="grid grid-cols-1 gap-4 min-[360px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      {items.map((item) => (
-        <li key={item.id}>
+      {items.map((item, index) => (
+        <li
+          key={item.id}
+          className="animate-card-in"
+          style={{ animationDelay: `${Math.min(index, 12) * 45}ms` }}
+        >
           <ProduceCard item={item} country={country} />
         </li>
       ))}

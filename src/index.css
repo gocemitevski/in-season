@@ -23,6 +23,42 @@
 
   --color-cream: #f2f5ef;
   --color-ink: #1c2a1e;
+
+  --animate-fade-in: fade-in 300ms ease-out both;
+  --animate-card-in: card-in 450ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-chip-pop: chip-pop 250ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes card-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes chip-pop {
+    0% {
+      transform: scale(0.92);
+    }
+    60% {
+      transform: scale(1.04);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 }
 
 @layer base {
@@ -36,6 +72,17 @@
 
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-leaf-600;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-delay: 0ms !important;
+      transition-duration: 0.01ms !important;
+      transition-delay: 0ms !important;
+    }
   }
 }
 

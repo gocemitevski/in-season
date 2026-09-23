@@ -218,7 +218,10 @@ export default function App({ initialState }) {
         </section>
 
         <section className="mt-12" aria-live="polite" aria-busy={isLoading}>
-          <h2 className="mb-5 px-1 text-xl font-semibold tracking-tight text-ink sm:px-3 sm:text-xl">
+          <h2
+            key={isLoading ? 'loading' : `${country?.code}-${month}-${category}`}
+            className="mb-5 animate-fade-in px-1 text-xl font-semibold tracking-tight text-ink sm:px-3 sm:text-xl"
+          >
             {resultsHeading}
           </h2>
           {isLoading ? <SkeletonGrid /> : <ProduceGrid items={items} country={country} />}

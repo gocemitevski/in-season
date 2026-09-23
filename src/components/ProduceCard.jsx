@@ -14,7 +14,7 @@ export default function ProduceCard({ item, country }) {
   const src = iconSrc(item.id)
 
   return (
-    <article className="relative flex h-full flex-col gap-4 rounded-2xl border border-leaf-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+    <article className="relative flex h-full flex-col gap-4 rounded-2xl border border-leaf-200 bg-white p-5 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-md">
       <div
         className="flex size-28 shrink-0 items-center justify-center self-start rounded-xl"
         style={{ backgroundColor: tint }}
