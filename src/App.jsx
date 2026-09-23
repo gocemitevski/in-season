@@ -207,9 +207,9 @@ export default function App({ initialState }) {
       <Header countries={COUNTRIES} country={country} onSelectCountry={handleSelectCountry} />
 
       <main className="mx-auto max-w-5xl px-4 pb-24 pt-10 sm:px-6 sm:pt-12">
-        <p className="max-w-2xl text-sm leading-relaxed text-ink/85">
+        <p className="max-w-2xl text-base leading-relaxed text-ink/85">
           Find which fruits and vegetables are in season this month in your country. Seasons
-          follow climate zone and hemisphere for 197 countries.
+          follow climate zone and hemisphere for <strong>197</strong> countries.
         </p>
 
         <section className="mt-8 space-y-5" aria-label="Filters">
