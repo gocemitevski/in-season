@@ -19,7 +19,7 @@ export default function Header({
       <div className="mx-auto flex flex-wrap max-w-5xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
         <div className="min-w-0">
           <div className="flex items-center gap-2">
-            <h1 className="truncate text-lg font-bold tracking-tight text-ink">
+            <h1 className="truncate text-xl font-bold tracking-tight text-ink">
               <a
                 href="./"
                 onClick={() => clearStoredLocation()}
@@ -32,9 +32,6 @@ export default function Header({
               </a>
             </h1>
           </div>
-          <p className="mt-0.5 truncate text-xs text-ink/80">
-            What&rsquo;s in season near you?
-          </p>
         </div>
 
         <div className="shrink-0">
