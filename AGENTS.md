@@ -28,7 +28,7 @@
 ## Deploy / env
 
 - Push to `master` auto-deploys GitHub Pages. The **build** job runs in the `github-pages` environment on purpose, so Actions variables scoped to that environment are visible.
-- GA: repository variable `GA_MEASUREMENT_ID` → passed as `VITE_GA_ID` at build. In `src/lib/analytics.js`, gtag's automatic `page_view` is disabled and pageviews are sent manually — don't re-enable auto hits.
+- GA: repository variable `GA_MEASUREMENT_ID` → passed as `VITE_GA_ID` at build. In `src/lib/ga.js`, gtag's automatic `page_view` is disabled and pageviews are sent manually — don't re-enable auto hits. (The filename avoids "analytics" so generic `analytics.js` ad-block rules don't break `npm run dev`.)
 - `SITE_URL` env overrides the hardcoded default domain at prerender time.
 - No `CNAME` file — with Pages-via-Actions the domain lives only in Settings → Pages → Custom domain (adding a CNAME file is ignored).
 
