@@ -156,6 +156,15 @@
   transform: scale(0.98);
 }
 
+/* Below 360px the select's intrinsic width would push the search button out
+   of the viewport — cap the pill to leave room for page padding, the container
+   gap, and the 36px search button (long names ellipsize when clamped). */
+@media (max-width: 359px) {
+  .country-select {
+    max-width: calc(100vw - 4.75rem);
+  }
+}
+
 /*
   Classic select (Firefox / no base-select): closed state flattens option
   text, so a literal space in the markup provides flag↔name separation.

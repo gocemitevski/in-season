@@ -16,8 +16,8 @@ export default function Header({
   useEffect(() => setSelectReady(true), [])
 
   return (
-    <header className="sticky top-0 z-20 border-b border-leaf-200 bg-cream/90 backdrop-blur-md">
-      <div className="mx-auto flex flex-wrap max-w-5xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
+    <header className="sticky top-0 z-20 overflow-hidden border-b border-leaf-200 bg-cream/90 backdrop-blur-md">
+      <div className="relative mx-auto flex flex-wrap max-w-5xl items-center justify-between gap-4 px-4 py-4 sm:px-6 sm:py-5">
         <div className="min-w-0">
           <div className="flex items-center gap-2">
             <h1 className="truncate text-xl font-bold tracking-tight text-ink">
@@ -35,7 +35,19 @@ export default function Header({
           </div>
         </div>
 
-        <div className="flex shrink-0 items-center gap-2">
+        <div className="relative flex shrink-0 items-center gap-2">
+          {country && (
+            <img
+              key={country.code}
+              src={`https://flagcdn.com/w640/${country.code.toLowerCase()}.png`}
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[16rem] max-w-none -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-15 select-none sm:w-[24rem]"
+              onError={(event) => {
+                event.currentTarget.style.display = 'none'
+              }}
+            />
+          )}
           <label htmlFor="country-select" className="sr-only">
             Country
           </label>
