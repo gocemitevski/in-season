@@ -9,20 +9,25 @@ const outPath = join(root, 'public', 'og.png')
 const WIDTH = 1200
 const HEIGHT = 630
 
-// Colorful, recognizable picks from the produce set (colors from produce.json).
+// Mini ProduceCards thrown around the centered copy — fixed coords so every
+// regeneration produces the identical image. Later entries paint on top;
+// placements never intersect each other or the copy block (see verify step).
+// 12 cards, mirror-symmetric around the 600px center: paired x positions and
+// rotations, uniform y per edge. Later entries paint on top; placements never
+// intersect each other or the copy block (see verify step).
 const PICKS = [
-  'strawberry',
-  'broccoli',
-  'carrot',
-  'blueberry',
-  'tomato',
-  'lemon',
-  'eggplant',
-  'avocado',
-  'grape',
-  'pumpkin',
-  'peach',
-  'watermelon',
+  { id: 'strawberry', x: -40, y: -70, rot: -6 },
+  { id: 'broccoli', x: 300, y: -65, rot: 5 },
+  { id: 'carrot', x: 750, y: -65, rot: -5 },
+  { id: 'tomato', x: 1090, y: -70, rot: 6 },
+  { id: 'lemon', x: 1015, y: 145, rot: -7 },
+  { id: 'eggplant', x: 1000, y: 330, rot: 4 },
+  { id: 'avocado', x: 1025, y: 560, rot: -6 },
+  { id: 'grape', x: 675, y: 555, rot: 7 },
+  { id: 'pumpkin', x: 375, y: 555, rot: -7 },
+  { id: 'watermelon', x: 25, y: 560, rot: 6 },
+  { id: 'peach', x: 50, y: 330, rot: -4 },
+  { id: 'blueberry', x: 35, y: 145, rot: 7 },
 ]
 
 const produce = JSON.parse(readFileSync(join(root, 'src/data/produce.json'), 'utf8'))
@@ -32,12 +37,6 @@ const quicksand = readFileSync(
   join(root, 'src/assets/fonts/Quicksand-latin.woff2'),
 ).toString('base64')
 const colorOf = new Map(produce.map((item) => [item.id, item.color]))
-// Per-icon contrast overrides (produce.json hues wash out on pale tints).
-const COLOR_FIX = new Map([
-  ['lemon', '#c9900a'],
-  ['avocado', '#5f7a28'],
-])
-const colorFor = (id) => COLOR_FIX.get(id) ?? colorOf.get(id) ?? '#549644'
 
 function iconSvg(id) {
   const path = join(root, 'src/assets/icons', `${id}.svg`)
@@ -45,19 +44,15 @@ function iconSvg(id) {
   return readFileSync(path, 'utf8').trim()
 }
 
-const tiles = PICKS.map((id, index) => {
-  const color = colorFor(id)
-  const col = index % 3
-  const row = Math.floor(index / 3)
-  const rotation = [-7, 5, -4, 6, -5, 8, -6, 4, -8, 5, -3, 7][index] ?? 0
+// App-accurate mini card: white, leaf-200 hairline, shadow-sm, pale tint
+// tile, ink monoline icon (ProduceCard.jsx proportions, scaled down).
+const cards = PICKS.map(({ id, x, y, rot }) => {
+  const color = colorOf.get(id) ?? '#549644'
   return `
-    <div class="tile" style="left:${col * 162}px; top:${row * 140}px; transform:rotate(${rotation}deg)">
-      <div class="tile-inner" style="box-shadow:0 10px 24px -8px ${color}55">
-        <span class="tile-bg" style="background:${color}1a"></span>
-        <span class="tile-icon" style="fill:${color}">${iconSvg(id)}</span>
-      </div>
+    <div class="card" style="left:${x}px; top:${y}px; transform:rotate(${rot}deg)">
+      <div class="tile" style="background:${color}1a">${iconSvg(id)}</div>
     </div>`
-})
+}).join('')
 
 const html = `<!doctype html>
 <html>
@@ -75,96 +70,118 @@ const html = `<!doctype html>
   body {
     position: relative;
     font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
-    background:
-      radial-gradient(560px 420px at 88% 12%, #deedd4 0%, transparent 62%),
-      radial-gradient(520px 400px at 12% 96%, #f1f8ec 0%, transparent 60%),
-      radial-gradient(380px 300px at 70% 90%, #fdf0d0 0%, transparent 65%),
-      #f2f5ef;
+    background: #f2f5ef;
     color: #1c2a1e;
     -webkit-font-smoothing: antialiased;
   }
-  .frame {
+
+  .copy {
     position: absolute;
-    inset: 0;
-    padding: 64px 72px;
-    display: flex;
-    align-items: center;
-    gap: 56px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    text-align: center;
   }
-  .copy { flex: 1 1 auto; min-width: 0; max-width: 640px; }
   .brand {
     display: flex;
     align-items: center;
-    gap: 14px;
-    font-size: 30px;
+    justify-content: center;
+    gap: 12px;
+    width: fit-content;
+    margin-inline: auto;
+    font-size: 28px;
     font-weight: 700;
     color: #3f7734;
     letter-spacing: -0.01em;
   }
-  .brand .leaf { font-size: 38px; line-height: 1; }
+  .brand .leaf { font-size: 32px; line-height: 1; }
   h1 {
-    margin-top: 40px;
-    font-size: 76px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 24px;
+    font-size: 92px;
     line-height: 1.02;
     font-weight: 700;
     letter-spacing: -0.03em;
     color: #1c2a1e;
   }
-  .chip {
+  .sub {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 20px;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: rgb(28 42 30 / 0.72);
+  }
+  .search-pill {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    margin-top: 44px;
-    padding: 14px 26px;
+    gap: 10px;
+    margin-top: 30px;
+    height: 52px;
+    padding: 0 22px;
     border-radius: 999px;
     background: #ffffff;
     border: 2px solid #c3deb3;
-    box-shadow: 0 6px 18px -8px rgb(42 78 37 / 0.25);
-    font-size: 24px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    font-size: 21px;
     font-weight: 600;
     color: #32602a;
   }
-  .chip .dot { width: 10px; height: 10px; border-radius: 50%; background: #74b25e; }
-  .collage {
-    position: relative;
-    width: 472px;
-    height: 546px;
-    flex: 0 0 auto;
+  .search-pill svg { display: block; }
+  .url {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(28 42 30 / 0.45);
   }
-  .tile { position: absolute; width: 148px; height: 126px; }
-  .tile-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 28px;
-    overflow: hidden;
-  }
-  .tile-bg { position: absolute; inset: 0; }
-  .tile-icon {
+
+  .card {
     position: absolute;
-    inset: 0;
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border: 1px solid #c3deb3;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
+  .tile {
+    width: 118px;
+    height: 118px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .tile-icon svg {
-    width: 80px;
-    height: 80px;
+  .tile svg {
+    width: 84px;
+    height: 84px;
     display: block;
-    /* Override the icons' root fill attribute; inherit the tint from .tile-icon. */
-    fill: inherit;
+    /* Icons ship a root fill attribute; the CSS declaration wins — ink, like the site. */
+    fill: #1a1a1a;
   }
 </style>
 </head>
 <body>
-  <div class="frame">
-    <div class="copy">
-      <div class="brand"><span class="leaf">🌿</span> In Season</div>
-      <h1>Fruits &amp; vegetables in&nbsp;season</h1>
-      <div class="chip">Anywhere on Earth</div>
+  <div class="copy">
+    <div class="brand"><span class="leaf">🌿</span> In Season</div>
+    <h1>What&rsquo;s in season?</h1>
+    <div class="sub">Fruits &amp; vegetables by month and country.</div>
+    <div class="search-pill">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20.5 20.5-4-4" />
+      </svg>
+      Anywhere on Earth
     </div>
-    <div class="collage">${tiles.join('')}</div>
+    <div class="url">in-season.gocemitevski.com</div>
   </div>
+  ${cards}
 </body>
 </html>`
 
@@ -183,6 +200,43 @@ try {
   })
   await page.setContent(html, { waitUntil: 'load' })
   await page.evaluate(() => document.fonts.ready)
+
+  // Geometric guard: cards must not intersect each other or the copy elements.
+  const layout = await page.evaluate(() => {
+    const rectOf = (el) => {
+      const r = el.getBoundingClientRect()
+      return { x: r.x, y: r.y, w: r.width, h: r.height }
+    }
+    return {
+      cards: [...document.querySelectorAll('.card')].map(rectOf),
+      copy: ['.brand', 'h1', '.sub', '.search-pill', '.url'].map((s) =>
+        rectOf(document.querySelector(s)),
+      ),
+    }
+  })
+
+  // Conservative: AABBs of rotated cards are larger than the cards themselves,
+  // so any pass here guarantees the painted rects cannot intersect.
+  const intersects = (a, b) =>
+    !(
+      a.x + a.w <= b.x || b.x + b.w <= a.x ||
+      a.y + a.h <= b.y || b.y + b.h <= a.y
+    )
+
+  const violations = []
+  const { cards, copy } = layout
+  for (let i = 0; i < cards.length; i++) {
+    for (let j = i + 1; j < cards.length; j++) {
+      if (intersects(cards[i], cards[j])) violations.push(`card ${i} x card ${j}`)
+    }
+    for (let k = 0; k < copy.length; k++) {
+      if (intersects(cards[i], copy[k])) violations.push(`card ${i} x copy[${k}]`)
+    }
+  }
+  if (violations.length) {
+    throw new Error(`Layout overlaps: ${violations.join('; ')}`)
+  }
+
   const buffer = await page.screenshot({ type: 'png' })
 
   // PNG IHDR: width at bytes 16..20, height at 20..24.
