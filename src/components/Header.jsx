@@ -40,6 +40,7 @@ export default function Header({
             <img
               key={country.code}
               src={`https://flagcdn.com/w640/${country.code.toLowerCase()}.png`}
+              fetchPriority="high"
               alt=""
               aria-hidden="true"
               className="pointer-events-none absolute left-1/2 top-1/2 -z-10 w-[16rem] max-w-none -translate-x-1/2 -translate-y-1/2 blur-3xl opacity-15 select-none sm:w-[24rem]"

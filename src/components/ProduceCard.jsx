@@ -20,7 +20,7 @@ export default function ProduceCard({ item, country }) {
         style={{ backgroundColor: tint }}
         aria-hidden="true"
       >
-        {src && <img src={src} alt="" className="h-20 w-20 object-contain" />}
+        {src && <img src={src} fetchPriority="high" alt="" className="h-20 w-20 object-contain" />}
       </div>
       <div className="min-w-0">
         <h3 className="truncate text-md font-bold text-ink">
