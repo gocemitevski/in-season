@@ -12,7 +12,7 @@ southern-hemisphere month shifts taken into account.
 
 ## Sitemap
 
-See the full sitemap at [SITEMAP_URL].
+See the full sitemap at [sitemap.xml](SITEMAP_URL).
 
 ## Notes
 
