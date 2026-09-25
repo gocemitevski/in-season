@@ -1,7 +1,27 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 import CountrySearch from './CountrySearch'
 import { clearStoredLocation } from '../hooks/useLocation'
 import { flagFromCode } from '../lib/season'
+
+function flagSrc(code) {
+  return `https://flagcdn.com/w640/${code.toLowerCase()}.png`
+}
+
+// The decorative flag is the page's LCP image, but its URL only exists once
+// the country is known — never in the prerendered HTML. Preload it from a
+// real <link> before React inserts the <img> so the request is discovered in
+// the document (and hint it high) instead of being started by the render.
+function preloadFlag(src) {
+  document.querySelector('link[data-flag-preload]')?.remove()
+  if (!src) return
+  const link = document.createElement('link')
+  link.rel = 'preload'
+  link.as = 'image'
+  link.href = src
+  link.setAttribute('fetchpriority', 'high')
+  link.setAttribute('data-flag-preload', '')
+  document.head.append(link)
+}
 
 export default function Header({
   countries,
@@ -14,6 +34,19 @@ export default function Header({
   const [selectReady, setSelectReady] = useState(false)
   // oxlint-disable-next-line react/set-state-in-effect -- flip to client-only after hydration
   useEffect(() => setSelectReady(true), [])
+
+  const flag = country ? flagSrc(country.code) : null
+  // Gate the flag on its preload link: <head> gets the <link> before React
+  // inserts the <img>, so the request starts at commit time (as when the img
+  // rendered directly) instead of when the render that adds it happens to run.
+  // A layout effect keeps both commits inside one paint — no late pop-in.
+  const [preloadedFlag, setPreloadedFlag] = useState(null)
+  useLayoutEffect(() => {
+    if (preloadedFlag === flag) return
+    preloadFlag(flag)
+    // oxlint-disable-next-line react/set-state-in-effect -- commit the flag src after its preload link exists
+    setPreloadedFlag(flag)
+  }, [flag, preloadedFlag])
 
   return (
     <header className="sticky top-0 z-20 overflow-hidden border-b border-leaf-200 bg-cream/90 backdrop-blur-md">
@@ -36,10 +69,10 @@ export default function Header({
         </div>
 
         <div className="relative flex shrink-0 items-center gap-2">
-          {country && (
+          {preloadedFlag && (
             <img
-              key={country.code}
-              src={`https://flagcdn.com/w640/${country.code.toLowerCase()}.png`}
+              key={preloadedFlag}
+              src={preloadedFlag}
               fetchPriority="high"
               alt=""
               aria-hidden="true"
