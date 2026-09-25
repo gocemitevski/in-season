@@ -217,9 +217,9 @@ export default function App({ initialState }) {
       <span className="font-bold">
         {items.length} {categoryLabel}
       </span>{' '}
-      <span className="font-medium text-ink/60">in season in</span>{' '}
+      <span className="font-medium text-ink/70">in season in</span>{' '}
       <span className="font-bold">{country.name}</span>{' '}
-      <span className="font-medium text-ink/60">during {MONTH_NAMES[month - 1]}</span>
+      <span className="font-medium text-ink/70">during {MONTH_NAMES[month - 1]}</span>
     </>
   )
 
@@ -252,7 +252,7 @@ export default function App({ initialState }) {
           <ShareLinks />
         </div>
 
-        <footer className="mt-8 border-t border-leaf-200 pt-8 text-center text-xs leading-relaxed text-ink/60">
+        <footer className="mt-8 border-t border-leaf-200 pt-8 text-center text-xs leading-relaxed text-ink/70">
           <p>
             Seasonality is approximate and varies by region, altitude, and growing method.
           </p>

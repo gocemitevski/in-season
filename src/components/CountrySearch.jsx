@@ -103,7 +103,7 @@ export default function CountrySearch({ countries, country, onSelect }) {
             </h2>
             <button
               type="button"
-              className="inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-ink/50 transition hover:bg-leaf-50 hover:text-ink"
+              className="inline-flex h-8 w-8 cursor-pointer items-center justify-center rounded-full text-ink/70 transition hover:bg-leaf-50 hover:text-ink"
               aria-label="Close"
               onClick={() => dialogRef.current?.close()}
             >
@@ -121,7 +121,7 @@ export default function CountrySearch({ countries, country, onSelect }) {
               spellCheck="false"
               aria-label="Search countries"
               placeholder="Type a country name…"
-              className="w-full rounded-full border border-leaf-200 bg-cream/60 px-4 py-2 text-sm text-ink placeholder:text-ink/40 focus:border-leaf-400 focus:bg-white focus:outline-none"
+              className="w-full rounded-full border border-leaf-200 bg-cream/60 px-4 py-2 text-sm text-ink placeholder:text-ink/70 focus:border-leaf-400 focus:bg-white focus:outline-none"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               onKeyDown={(event) => {
@@ -172,7 +172,7 @@ export default function CountrySearch({ countries, country, onSelect }) {
               )
             })}
             {results.length === 0 && (
-              <li className="px-3 py-8 text-center text-sm text-ink/50">
+              <li className="px-3 py-8 text-center text-sm text-ink/70">
                 No countries match “{query.trim()}”.
               </li>
             )}

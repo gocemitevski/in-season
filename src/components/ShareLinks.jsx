@@ -61,7 +61,7 @@ export default function ShareLinks() {
 
   return (
     <div className="flex flex-wrap items-center justify-center gap-2" aria-label="Share this view">
-      <span className="text-xs font-medium text-ink/50">Share:</span>
+      <span className="text-xs font-medium text-ink/70">Share:</span>
       {LINKS.map((link) => (
         <button key={link.label} type="button" className={PILL} onClick={open(link.build)}>
           {link.label}
