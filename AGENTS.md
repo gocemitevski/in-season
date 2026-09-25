@@ -24,7 +24,7 @@
 ## Lint
 
 - oxlint only — no ESLint/Prettier config exists. Expected baseline: **0 warnings**.
-- The three post-hydration effects (`App.jsx` URL month/category, `Header.jsx` `selectReady`, `useLocation.js` URL/stored country) legitimately call setState and carry scoped `oxlint-disable react/set-state-in-effect` comments with reasons. Hydration requires "apply external state after first render" — do not remove the disables, and do not "fix" these by reading the URL/storage during render (that mismatches the prerendered HTML).
+- The four post-hydration effects (`App.jsx` URL month/category, `Header.jsx` `selectReady` and the flag preload gate, `useLocation.js` URL/stored country) legitimately call setState and carry scoped `oxlint-disable react/set-state-in-effect` comments with reasons. Hydration requires "apply external state after first render" — do not remove the disables, and do not "fix" these by reading the URL/storage during render (that mismatches the prerendered HTML).
 
 ## Deploy / env
 
@@ -37,6 +37,7 @@
 
 - Country selection: fresh visits resolve via IP geolocation; a manual choice is persisted; the header home link (`href="./"`) intentionally omits `preventDefault` so it triggers a full reload and re-runs detection. Preserve this.
 - The country select is client-gated (`selectReady` in `Header.jsx`) and must not render during SSR.
+- The blurred header flag is the LCP image, but its URL only exists after the country is known. `Header.jsx` therefore inserts a `<link rel="preload" as="image" fetchpriority="high">` first and renders the `<img>` from `preloadedFlag` — don't render the flag before its preload link, or Lighthouse's `lcp-discovery-insight` fails "Request is discoverable in initial document".
 
 ## Conventions
 
