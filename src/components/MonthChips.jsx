@@ -3,7 +3,7 @@ import { MONTH_NAMES, MONTH_NAMES_SHORT } from '../lib/season'
 export default function MonthChips({ month, onChange }) {
   return (
     <div
-      className="-mx-4 flex flex-wrap gap-2.5 px-4 pb-1 sm:mx-0 sm:px-0"
+      className="-mx-4 grid grid-cols-3 gap-1.5 px-4 pb-1 sm:mx-0 sm:grid-cols-6 sm:gap-2.5 sm:px-0 md:grid-cols-12"
       role="group"
       aria-label="Select month"
     >
@@ -18,7 +18,7 @@ export default function MonthChips({ month, onChange }) {
             title={MONTH_NAMES[index]}
             onClick={() => onChange(value)}
             className={[
-              'min-w-16 flex-1 cursor-pointer rounded-full px-4 py-2 text-center text-sm font-medium transition duration-200 active:scale-95',
+              'cursor-pointer rounded-full px-4 py-2 text-center text-sm font-medium transition duration-200 md:px-2 lg:px-4 active:scale-95',
               selected
                 ? 'animate-chip-pop bg-leaf-600 text-white shadow-sm shadow-leaf-600/25'
                 : 'border border-leaf-300 bg-white text-ink/80 hover:border-leaf-400 hover:bg-leaf-50',
