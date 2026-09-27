@@ -256,7 +256,17 @@ export default function App({ initialState }) {
           <p>
             Seasonality is approximate and varies by region, altitude, and growing method.
           </p>
-          <p className="mt-1">Built with React &amp; web standards.</p>
+          <p className="mt-1">
+            Built with React &amp; web standards by{' '}
+            <a
+              href="https://gocemitevski.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-leaf-300 underline-offset-2 hover:text-leaf-800 focus-visible:outline-2 focus-visible:outline-offset-2"
+            >
+              Goce Mitevski
+            </a>.
+          </p>
         </footer>
       </main>
     </div>
