@@ -18,7 +18,7 @@ export default function MonthChips({ month, onChange }) {
             title={MONTH_NAMES[index]}
             onClick={() => onChange(value)}
             className={[
-              'min-w-24 flex-1 cursor-pointer rounded-full px-4 py-2 text-center text-sm font-medium transition duration-200 active:scale-95',
+              'min-w-16 flex-1 cursor-pointer rounded-full px-4 py-2 text-center text-sm font-medium transition duration-200 active:scale-95',
               selected
                 ? 'animate-chip-pop bg-leaf-600 text-white shadow-sm shadow-leaf-600/25'
                 : 'border border-leaf-300 bg-white text-ink/80 hover:border-leaf-400 hover:bg-leaf-50',
