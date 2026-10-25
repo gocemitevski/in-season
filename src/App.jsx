@@ -6,7 +6,7 @@ import ProduceGrid from './components/ProduceGrid'
 import ShareLinks from './components/ShareLinks'
 import { useLocation } from './hooks/useLocation'
 import { detectCountry } from './lib/geo'
-import { sendPageview } from './lib/ga'
+import { sendPageview } from './lib/track'
 import {
   COUNTRIES,
   MONTH_NAMES,

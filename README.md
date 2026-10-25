@@ -68,20 +68,13 @@ One-time setup:
 
 The build uses Vite `base: './'`, so the same `dist/` works at a domain root or a subpath. `SITE_URL` controls canonical / Open Graph / sitemap / `llms.txt` / `404.html` absolute URLs.
 
-### Google Analytics
+### Analytics (Matomo, cookieless)
 
-Production builds inject the GA4 measurement ID via the `VITE_GA_ID` build env. Set it once:
+The site self-hosts Matomo at `https://analytics.gocemitevski.com/` (site ID `4`). Both values are hardcoded in `src/lib/track.js`, so the build needs no analytics env and the deploy workflow passes none.
 
-1. Repo → **Settings → Secrets and variables → Actions → Variables**
-2. Add `GA_MEASUREMENT_ID` = `G-XXXXXXXXXX` (repository-level, or scoped to the `github-pages` environment — both work; the build job runs in that environment)
+The tracker pushes `disableCookies` before any hit, so no `_pk_*` cookie is ever written — that is what makes the tracking cookieless (optionally back it up server-side with Matomo → **Settings → Privacy → Force tracking without cookies**). Matomo's automatic pageview is not used: the app sends one pageview after hydration for the initial URL and again on each country/month/category change, deduped in `App.jsx`. `npm run dev` never sends analytics.
 
-The deploy workflow passes it to the build as `VITE_GA_ID`. gtag's automatic `page_view` is disabled; the app sends a single pageview after hydration for the initial URL and again on each country/month/category change. Dev servers and builds without `VITE_GA_ID` skip analytics entirely.
-
-For a local production build with analytics:
-
-```bash
-VITE_GA_ID=G-XXXXXXXXXX SITE_URL=https://in-season.gocemitevski.com npm run build
-```
+Caveats: local production builds *do* send hits (filter `127.0.0.1` in Matomo if you test that way), and common ad-block lists target `matomo.js`/`matomo.php`, so some visits go uncounted.
 
 ## Data
 

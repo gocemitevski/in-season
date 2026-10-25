@@ -29,7 +29,7 @@
 ## Deploy / env
 
 - Push to `master` auto-deploys GitHub Pages. The **build** job runs in the `github-pages` environment on purpose, so Actions variables scoped to that environment are visible.
-- GA: repository variable `GA_MEASUREMENT_ID` → passed as `VITE_GA_ID` at build. In `src/lib/ga.js`, gtag's automatic `page_view` is disabled and pageviews are sent manually — don't re-enable auto hits. (The filename avoids "analytics" so generic `analytics.js` ad-block rules don't break `npm run dev`.)
+- Analytics: cookieless Matomo, site ID `4` at `https://analytics.gocemitevski.com/`, hardcoded in `src/lib/track.js` (no build env, no workflow vars). `disableCookies` is pushed before the first hit and Matomo's auto pageview is unused — pageviews are sent manually after hydration and on each country/month/category change; don't re-enable auto hits. `npm run dev` skips tracking entirely. (The filename avoids "analytics" and "matomo" so generic ad-block rules don't break `npm run dev`.)
 - `SITE_URL` env overrides the hardcoded default domain at prerender time.
 - No `CNAME` file — with Pages-via-Actions the domain lives only in Settings → Pages → Custom domain (adding a CNAME file is ignored).
 
